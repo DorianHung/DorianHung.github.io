@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dorianhung.github.io</id>
     <title>Dorain&apos;s Blog</title>
-    <updated>2021-02-17T12:58:42.933Z</updated>
+    <updated>2021-02-19T11:48:25.205Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dorianhung.github.io"/>
     <link rel="self" href="https://dorianhung.github.io/atom.xml"/>
@@ -10,6 +10,93 @@
     <logo>https://dorianhung.github.io/images/avatar.png</logo>
     <icon>https://dorianhung.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Dorain&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[实证资产定价（四）价值溢价]]></title>
+        <id>https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/</id>
+        <link href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/">
+        </link>
+        <updated>2021-02-19T10:32:44.000Z</updated>
+        <content type="html"><![CDATA[<p>本章重点是对价值溢价的实证研究并证明账面市值比和股票期望收益之间的正相关关系</p>
+<ul>
+<li>
+<p>价值股和未来收益的相关收益的相关性可以归因为两个变量——市值和权益的账面市值比（Fama and French 1992）；</p>
+</li>
+<li>
+<p>股票期望收益和账面市值比之间的正相关关系研究充满争议，目前两种主要解释为：<br>
+1、Fama和French（1993）以及Chen和Zhang（1998）提出的基于风险的解释，价值股更高的收益是由于其对定价风险因素的暴露程度更高；他们的研究表明价值企业通常有较低的收益，较高的收益不确定性和较高的杠杆水平。</p>
+</li>
+</ul>
+<p>该理论的支持者认为，经济条件很差，风险溢价很高时，做多价值股并做空成长股的组合的风险很高。Lettau和Ludvigson（2001）的实证研究支持了这一论点：经济下滑时期，相对于成长股的组合收益，价值股的组合收益与消费增长相关性更高。Zhang（2005）从基于生产的资产定价模型中得出此理论，在该模型中，价值股比成长股的风险更高，尤其在经济环境糟糕和风险溢价突增的国家表现更为明显。Fama 和French（1995）发现在此期间，高账面市值比是公司持续盈利能力低的表现。</p>
+<p>2、第二种基于投资者行为的解释；与价值投资相关的收益是由于幼稚的投资者对未来增长的预期导致的错误定价所带来的。价值股的高收益是由投资者错误估计企业未来收益增长导致的错误定价造成的，幼稚的投资者往往过分依据以往的增长情况来估计未来增长，幼稚的投资者对过去表现非常好的股票过于乐观，创造了对这种股票的需求，导致这些魅力股票的定价过高。类似地，幼稚的投资者往往对过去表现较差的股票过度反应，过度地抛售，导致这些价值股的定价过低。</p>
+<p>到底反转策略能产生高收益是因为股票被错误定价，还是因为价值股的基本风险高于成长股，目前还没有定论</p>
+<h3 id="计算账面市值比">计算账面市值比</h3>
+<ul>
+<li>
+<p>账面市值比记为BM，定义为公司普通股账面价值BE除以公司权益市场的价值ME</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mi>M</mi><mo>=</mo><mfrac><mrow><mi>B</mi><mi>E</mi></mrow><mrow><mi>M</mi><mi>E</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">BM=\frac{BE}{ME}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p>其中账面价值取自公司资产负债表，市场价值和公司市值相同，由于BM高度右偏（参考市值）为了最小化数据分析中BM极端影响，使用BM的自然对数lnBM</p>
+</li>
+<li>
+<p>BE的计算开始于股东权益的账面价值，书中加上了递延税和投资税收抵免修正了税收效应对价值的影响，最后再从中减去优先股的账面价值</p>
+</li>
+<li>
+<p>BE的计算结果可能为负，数据处理时会舍去这些数据</p>
+</li>
+<li>
+<p>计算市场权益通常使用的是市场价值，即任意指定年份12月的流通股数量乘以价格</p>
+</li>
+<li>
+<p>最后，匹配BE和ME的时间。最标准的方法是Fama和French的做法：第y个财年年底的数据计算的账面净值和同一年y年底计算的市场价值进行匹配（对于每年1月作为会计年底的公司，账面净值将于给定年度1月底进行计算，市场价值将于同年12月底计算，即时间差最多11个月）</p>
+</li>
+<li>
+<p>因为计算年份y账面市值比所用的数据在y+1年6月才公布，为了确保数据可以公开获取，年份y+1的6月到年份y+2的5月的BM使用年份y数据计算而得</p>
+</li>
+<li>
+<p><strong>即，对于本书月度分析而言，年度y+1的6月到年度y+2的5月期间月份t的账面市值比，可以看作每个自然年度y年底的权益账面价值除以年度y年底即12月的市场价值。</strong></p>
+</li>
+</ul>
+<h3 id="描述性统计">描述性统计</h3>
+<ul>
+<li>BM具有非常明显正偏态分布，也有肥尾特性</li>
+<li>有效且能获得的BM比β和MktCap少，缺失值较多</li>
+</ul>
+<h3 id="相关性">相关性</h3>
+<ul>
+<li>BM和lnBM的皮尔逊积矩相关系数非常高（斯皮尔曼为1）BM和市场贝塔，股票规模是负相关的</li>
+</ul>
+<h3 id="持续性">持续性</h3>
+<ul>
+<li>BM和lnBM有比较显著的持续性，即使滞后期到了5年持续性也很高。在所有滞后期中lnBM的持续性都比BM略高</li>
+</ul>
+<h3 id="账面市值比和股票收益">账面市值比和股票收益</h3>
+<p>####1、 单变量组合分析<br>
+根据BM排序而形成十分位数组合进行单变量组合分析，结果如表10.1所示</p>
+<p><img src="https://dorianhung.github.io/post-images/1613733222662.png" alt="" loading="lazy"><br>
+从表中A部分可以看出，在市值加权组合下并没有检测出显著的价值溢价，高减低组合经Newey West调整的T统计量仅为-0.24；而在等权重组合中，从第1十分位到第10十分位的收益则呈现出了一定的单调性（增），高减低组合经Newey West调整的T统计量为1.76，具有一定统计意义。</p>
+<h4 id="2-双变量组合分析">2、双变量组合分析</h4>
+<p>现在我们将MktCap作为控制变量，通过双变量独立排序进一步检测价值溢价。根据市值和BM将股票各分为5组，一共形成25个组合，采用市值加权和等权重方法分别计算组合超额收益，结果如表10.2所示：</p>
+<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1613733637878.png" alt="" loading="lazy"></figure>
+<p>从表中可以发现，无论采用等权重还是市值加权，市值最大组（MktCap5）的BM差异组合无论是超额收益的数值还是显著性，相比于其他组合都是最低的，Bali在美股的检验中也发现了相同现象，书中得出了价值效应在大市值股票中不存在的结论，虽然在A股各组显著性均不够高，但各组数据的趋势大致相同。<br>
+另外，市值加权和等权重组合产生了相似的结果，Bali在书中提到了解释：因为市值本身是排序变量，每个组合中股票的市值是相似的，所以采用市值加权不会带来很大影响。<br>
+最后，在控制了市值后，各个市值组合的BM差异组合都无法证明A股存在价值溢价</p>
+<h4 id="1053-fama和macbeth回归分析">10.5.3 Fama和MacBeth回归分析</h4>
+<p>现在用FM回归继续检验BM和股票未来收益的关系，考虑到BM和Size分布的高偏度，将BM和市值取对数作为回归自变量，结果如表10.3所示：</p>
+<p><img src="https://dorianhung.github.io/post-images/1613734653141.png" alt="" loading="lazy"><br>
+列（1）使用lnBM作为唯一自变量；回归得到lnBM的平均斜率系数为0.24，Newey West调整T统计量为2.02，这次检验出了BM和股票未来收益之间具有一定统计意义的正相关关系。<br>
+列（2）使用lnBM和Size作为自变量；这时lnBM平均斜率下降到0.19且T统计量下降到1.51，而Size检测出了显著的与收益的负相关关系。<br>
+列（3）使用lnBM和β作为自变量；和Size类似，lnBM负相关关系显著性下降，而β却未来收益有着显著负相关关系。<br>
+列（4）使用lnBM，β和Size作为自变量，出乎意料地，三个自变量均检测了显著的正相关和负相关性</p>
+<h3 id="106价值因子fama和french三因子模型">10.6价值因子，Fama和French三因子模型</h3>
+<p>Fama 和 French构建了一个0成本组合，持有高账面市值比的股票多头头寸和低账面市值比的空头头寸，并把这个组合成为HML</p>
+<p>FF风险模型常被用于评估组合是否产生不是由于对风险因素敏感所得的平均收益，三因子模型包含三个风险因子：MKT，SMB，HML。这些组合中的每一个收益旨在代替与获取一个给定风险相关的收益，同时与其他风险有最少的接触</p>
+<ul>
+<li>如果α统计上异于0，表明组合产生超额收益且不是对市场，规模和价值因素的敏感性产生</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[实证资产定价（三）规模效应]]></title>
         <id>https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-san-gui-mo-xiao-ying/</id>
@@ -61,8 +148,9 @@
 <figure data-type="image" tabindex="2"><img src="https://dorianhung.github.io/post-images/1613556912359.png" alt="" loading="lazy"></figure>
 <p>列（1）显示，Size为唯一自变量时，截面回归月平均斜率为-0.52，Newey West调整T统计量为-2.34，表明Size和股票未来收益之间存在统计上显著的负相关关系。<br>
 列（2）显示，控制β影响后，Size的平均斜率为-0.49，Newey West调整T统计量为-2.31，规模和股票未来收益之间负横截面关系仍然存在，β调整T统计量为-1.78，在统计上勉强显著。</p>
-<p>接下来检测列1在经济上的显著性，通过describe()得到回归自变量的描述性统计，如表9.4，9.5所示。<br>
+<p>接下来检测列1在经济上的显著性，通过describe()函数得到回归自变量的描述性统计，如下表所示。<br>
 <img src="https://dorianhung.github.io/post-images/1613566085343.png" alt="" loading="lazy"><br>
+<img src="https://dorianhung.github.io/post-images/1613566822520.png" alt="" loading="lazy"><br>
 注：超额收益没有采用百分形式</p>
 <p>将包含控制变量β的回归方程式中Size的平均斜率系数-0.49乘以标准差2得到-0.98，这表明其他条件相同时，Size的一个标准差偏差与每月0.98%的股票期望收益差额相关，这在经济上也是十分重要的。</p>
 <p><strong>总结：</strong></p>
@@ -119,22 +207,21 @@
 </li>
 </ul>
 <h2 id="贝塔和股票收益">贝塔和股票收益</h2>
-<p>CAPM的基本预测是：市场贝塔和股票期望收益之间存在正相关关系，且这个斜率表示市场风险溢价。而在Bail书中对美股的实证检验中没有得出上述结论——组合分析，回归分析都<strong>没有</strong>检测到贝塔和未来收益的显著关系。</p>
-<p>下文为A股对贝塔的实证检验：</p>
+<p>根据CAPM的预测，市场贝塔和股票期望收益之间存在正相关关系，且这个斜率表示市场风险溢价。而在Bali书中对美股的实证检验中没有得出上述结论——组合分析，回归分析都<strong>没有</strong>检测到贝塔和未来收益的显著关系，那么对于A股情况如何呢？接下来为A股对贝塔的实证检验：</p>
 <h3 id="1组合分析">1.组合分析</h3>
-<ul>
-<li>
-<p>以β不同的测量作为排序变量研究单变量排序组合</p>
-</li>
-<li>
-<p>市值加权<br>
-<img src="https://dorianhung.github.io/post-images/1613313562098.png" alt="" loading="lazy"></p>
-</li>
-</ul>
-<p>-等权重<br>
-<img src="https://dorianhung.github.io/post-images/1613313587861.png" alt="" loading="lazy"></p>
+<p>以贝塔为排序变量研究单变量排序组合，结果如表8.1所示<br>
+<img src="https://dorianhung.github.io/post-images/1613637269014.png" alt="" loading="lazy"></p>
+<p>结果表明，无论以市值加权或等权重计算收益，所有十分位上都没有呈现出明显的单调性，但平均收益最低的总是第10分位组合（与CAPM矛盾）；高减低组合的平均收益率均为负数；采用市值加权计算时，贝塔和股票收益负向关系更弱（表现在高减低组合的平均收益率绝对值更低，显著性更低）；以上结论与Bali的美股实证几乎一致，我们没有发现贝塔和期望收益的正相关关系，而是恰恰相反。</p>
 <h3 id="2fm回归">2.FM回归</h3>
-<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1613313600835.png" alt="" loading="lazy"></figure>
+<p>接下来采用FM回归分析研究贝塔和股票收益关系，每个月对每种贝塔进行测量，用未来一个月股票超额收益对贝塔横截面回归，结果由pandas库describe()方法导出，如表8.2所示：<br>
+<img src="https://dorianhung.github.io/post-images/1613637275533.png" alt="" loading="lazy"></p>
+<p>结果表明，贝塔的平均系数为负数（Newey West调整T统计量为-1.98，在5%水平下显著），与CAPM的预测矛盾，此外回归得到截距系数非常大，与CAPM的第二个预测即零贝塔证券期望超额收益为零矛盾；考虑经济意义，用平均斜率系数-1.02乘以标准差5.10得到-5.20，β每增加一个标准差期望收益每月减少5.20%，数值经济上有意义。</p>
+<p>与CAPM矛盾的实证检测结果是最持久且最被广泛研究的异象，对此Bali在书中提到的解释有：</p>
+<ul>
+<li>机构投资者基准行为引起（Baker、Bradley和Wurgler 2011）</li>
+<li>受杠杆约束投资者会买多高β股票以增加组合期望收益，结果是高贝塔股票价格升高从而降低期望收益（Frazzini和Pedersen 2014）</li>
+<li>投资者对博彩型股票的需求，这些股票恰好是高贝塔股票，结果使高贝塔股票价格升高从而降低期望收益（Bali、Brown、Murray和Tang 2014）</li>
+</ul>
 ]]></content>
     </entry>
     <entry>
