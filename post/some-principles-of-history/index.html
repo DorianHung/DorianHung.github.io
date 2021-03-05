@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>实证资产定价（四）价值溢价 | Dorain&#39;s Blog</title>
+<title>SOME PRINCIPLES OF HISTORY | Dorain&#39;s Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1614939339316">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -32,7 +32,7 @@
 
 
 
-  <meta name="description" content="实证资产定价（四）价值溢价" />
+  <meta name="description" content="SOME PRINCIPLES OF HISTORY" />
   <meta name="keywords" content="" />
 </head>
 
@@ -177,8 +177,7 @@
       <div class="sidebar-body gemini" id="sidebar_body">
         
           
-            <div class="post-side-meta" id="post_side_meta">
-              
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -216,214 +215,6 @@
 
 
 </div>
-            </div>
-            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
-              <div class="toc-box right-motion">
-  <div class="toc-wrapper auto-number auto"
-    id="toc_wrapper">
-    <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E8%AE%A1%E7%AE%97%E8%B4%A6%E9%9D%A2%E5%B8%82%E5%80%BC%E6%AF%94">计算账面市值比</a></li>
-<li><a href="#%E6%8F%8F%E8%BF%B0%E6%80%A7%E7%BB%9F%E8%AE%A1%E7%AD%89%E7%BB%93%E8%AE%BA%E7%BE%8E%E8%82%A1%E5%AE%9E%E8%AF%81">描述性统计等结论（美股实证）</a></li>
-<li><a href="#%E4%BB%B7%E5%80%BC%E5%9B%A0%E5%AD%90fama%E5%92%8Cfrench%E4%B8%89%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">价值因子，Fama和French三因子模型</a></li>
-<li><a href="#%E8%B4%A6%E9%9D%A2%E5%B8%82%E5%80%BC%E6%AF%94%E5%92%8C%E8%82%A1%E7%A5%A8%E6%94%B6%E7%9B%8A">账面市值比和股票收益</a>
-<ul>
-<li><a href="#1-%E5%8D%95%E5%8F%98%E9%87%8F%E7%BB%84%E5%90%88%E5%88%86%E6%9E%90">1、 单变量组合分析</a></li>
-<li><a href="#2-%E5%8F%8C%E5%8F%98%E9%87%8F%E7%BB%84%E5%90%88%E5%88%86%E6%9E%90">2、双变量组合分析</a></li>
-<li><a href="#1053-fama%E5%92%8Cmacbeth%E5%9B%9E%E5%BD%92%E5%88%86%E6%9E%90">10.5.3 Fama和MacBeth回归分析</a></li>
-</ul>
-</li>
-<li><a href="#ep%E5%92%8C%E8%82%A1%E7%A5%A8%E6%94%B6%E7%9B%8A">EP和股票收益</a>
-<ul>
-<li><a href="#%E7%BB%84%E5%90%88%E5%88%86%E6%9E%90">组合分析</a></li>
-<li><a href="#fm%E5%9B%9E%E5%BD%92">FM回归</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-  </div>
-</div>
-
-<script>
-
-  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
-  let active = 'active-show', activeClass = 'active-current';
-  let tocWrapper = document.querySelector('#toc_wrapper');
-  let tocContent = tocWrapper.children[0];
-  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
-
-  function addTocNumber(elem, deep) {
-    if (!elem) {
-      return;
-    }
-    let prop = elem.__proto__;
-
-    if (prop === HTMLUListElement.prototype) {
-      for (let i = 0; i < elem.children.length; i++) {
-        addTocNumber(elem.children[i], deep + (i + 1) + '.');
-      }
-    } else if (prop === HTMLLIElement.prototype) {
-      // 保存li元素
-      if (elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
-        lList.push(elem);
-      }
-      for (let i = 0; i < elem.children.length; i++) {
-        let cur = elem.children[i];
-        if (cur.__proto__ === HTMLAnchorElement.prototype) {
-          if (autoNumber) {
-            cur.text = deep + ' ' + cur.text;
-          }
-        } else if (cur.__proto__ === HTMLUListElement.prototype) {
-          addTocNumber(cur, deep);
-        }
-      }
-    }
-  }
-
-  function removeParentActiveClass() {
-    let parents = tocContent.querySelectorAll('.' + active)
-    parents.forEach(function (elem) {
-      elem.classList.remove(active);
-    });
-  }
-
-  function addActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.add(activeClass);
-    }
-  }
-
-  function removeActiveClass(index) {
-    if (index >= 0 && index < hList.length) {
-      lList[index].classList.remove(activeClass);
-    }
-  }
-
-  function addActiveLiElemment(elem, parent) {
-    if (!elem || elem === parent) {
-      return;
-    } else {
-      if (elem.__proto__ === HTMLLIElement.prototype) {
-        elem.classList.add(active);
-      }
-      addActiveLiElemment(elem.parentElement, parent);
-    }
-  }
-
-  function showToc() {
-    if (tocWrapper) {
-      postBody = document.querySelector('#post_body');
-      for (let i = 0; i < postBody.children.length; i++) {
-        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
-          hList.push(postBody.children[i]);
-        }
-      }
-      if (tocWrapper.classList.contains('compress')) {
-        tocContent.classList.add('closed');
-      } else if (tocWrapper.classList.contains('no_compress')) {
-        tocContent.classList.add('expanded');
-      } else {
-        if (hList.length > 10) {
-          active = 'active-hidden'
-          tocContent.classList.add('closed');
-        } else {
-          tocContent.classList.add('expanded');
-        }
-      }
-    }
-  }
-
-  (function () {
-    // 处理不是从#一级标题开始目录
-    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
-      let con = tocContent.children[0].children[0];
-      tocContent.innerHTML = con.innerHTML;
-    }
-    let markdownItTOC = document.querySelector('.markdownIt-TOC');
-    let innerHeight = window.innerHeight;
-    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
-    addTocNumber(tocContent, '');
-  })();
-
-  document.addEventListener('scroll', function (e) {
-    if (lList.length <= 0) {
-      return;
-    }
-    let scrollTop = document.scrollingElement.scrollTop + 10;
-    let dir;
-
-    if (lastTop - scrollTop > 0) {
-      dir = 'up';
-    } else {
-      dir = 'down';
-    }
-
-    lastTop = scrollTop;
-    if (scrollTop <= 0) {
-      if (lastIndex >= 0 && lastIndex < hList.length) {
-        lList[lastIndex].classList.remove(activeClass);
-      }
-      return;
-    }
-
-    let current = 0, hasFind = false;
-    for (let i = 0; i < hList.length; i++) {
-      if (hList[i].offsetTop > scrollTop) {
-        current = i;
-        hasFind = true;
-        break;
-      }
-    }
-    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
-      current = hList.length - 1;
-    } else {
-      current--;
-    }
-    if (dir === 'down') {
-      if (current > lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex)
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    } else {
-      if (current < lastIndex) {
-        addActiveClass(current);
-        removeActiveClass(lastIndex);
-        lastIndex = current;
-        removeParentActiveClass();
-        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
-      }
-    }
-  });
-
-
-  window.addEventListener('load', function () {
-    showToc();
-    document.querySelector('#sidebar').style = 'display: block;';
-    tocWrapper.classList.add('toc-active');
-    setTimeout(function () {
-      if ("createEvent" in document) {
-        let evt = document.createEvent("HTMLEvents");
-        evt.initEvent("scroll", false, true);
-        document.dispatchEvent(evt);
-      }
-      else {
-        document.fireEvent("scroll");
-      }
-    }, 500)
-  })
-
-</script>
-            </div>
           
         
       </div>
@@ -511,8 +302,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/">
-      实证资产定价（四）价值溢价
+    <a class="post-title-link" href="https://dorianhung.github.io/post/some-principles-of-history/">
+      SOME PRINCIPLES OF HISTORY
     </a>
   </h1>
   <div class="post-meta">
@@ -520,122 +311,43 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2021-02-19</span>
+      <span>2021-02-27</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>13分钟</span>
+      <span>2分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>3561<span class="pc-show">字数</span></span>
+      <span>589<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p>本章重点是对价值溢价的实证研究并证明账面市值比和股票期望收益之间的正相关关系</p>
-<ul>
+              <ul>
 <li>
-<p>价值股和未来收益的相关收益的相关性可以归因为两个变量——市值和权益的账面市值比（Fama and French 1992）；</p>
+<p>在此请将历史想象为两个组成部分的总和：一个是不规则组成部分，由无法预知也不遵循任何明显模式的事件组成；另一个是规则组成部分，由长期历史趋势组成。我们在这里考虑的是长期趋势。</p>
 </li>
 <li>
-<p>股票期望收益和账面市值比之间的正相关关系研究充满争议，目前两种主要解释为：<br>
-1、Fama和French（1993）以及Chen和Zhang（1998）提出的基于风险的解释，价值股更高的收益是由于其对定价风险因素的暴露程度更高；他们的研究表明价值企业通常有较低的收益，较高的收益不确定性和较高的杠杆水平。</p>
-</li>
-</ul>
-<p>该理论的支持者认为，经济条件很差，风险溢价很高时，做多价值股并做空成长股的组合的风险很高。Lettau和Ludvigson（2001）的实证研究支持了这一论点：经济下滑时期，相对于成长股的组合收益，价值股的组合收益与消费增长相关性更高。Zhang（2005）从基于生产的资产定价模型中得出此理论，在该模型中，价值股比成长股的风险更高，尤其在经济环境糟糕和风险溢价突增的国家表现更为明显。Fama 和French（1995）发现在此期间，高账面市值比是公司持续盈利能力低的表现。</p>
-<p>2、第二种基于投资者行为的解释；与价值投资相关的收益是由于幼稚的投资者对未来增长的预期导致的错误定价所带来的。价值股的高收益是由投资者错误估计企业未来收益增长导致的错误定价造成的，幼稚的投资者往往过分依据以往的增长情况来估计未来增长，幼稚的投资者对过去表现非常好的股票过于乐观，创造了对这种股票的需求，导致这些魅力股票的定价过高。类似地，幼稚的投资者往往对过去表现较差的股票过度反应，过度地抛售，导致这些价值股的定价过低。</p>
-<p>到底反转策略能产生高收益是因为股票被错误定价，还是因为价值股的基本风险高于成长股，目前还没有定论</p>
-<h3 id="计算账面市值比">计算账面市值比</h3>
-<ul>
-<li>
-<p>账面市值比记为BM，定义为公司普通股账面价值BE除以公司权益市场的价值ME</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mi>M</mi><mo>=</mo><mfrac><mrow><mi>B</mi><mi>E</mi></mrow><mrow><mi>M</mi><mi>E</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">BM=\frac{BE}{ME}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>第一条原则。假如一个小改变影响了长期历史趋势，这种影响只能是暂时性的，趋势很快就能逆转回到原来的状态。如果某个小改变看似在长期历史趋势当中取得了长期影响，这只是因为这个改变的方向与大趋势相一致，因此趋势没有得到改变，只是向前推进了一步。 第一原则基本上就是同义反复。假如某个趋势相对小改变而言不够稳定，这一趋势就会随机发展而非追寻特定方向，换句话说就是根本无法成为长期趋势。</p>
 </li>
 <li>
-<p>其中账面价值取自公司资产负债表，市场价值和公司市值相同，由于BM高度右偏（参考市值）为了最小化数据分析中BM极端影响，使用BM的自然对数lnBM</p>
+<p>第二条原则。假如一项改变足够大，可以永久改变长期历史趋势，那这项改变必然影响整个社会。换言之，社会体系中的各个部分都是相关的，不可能永久性改变任何重要部分而不改变所有其他部分。</p>
 </li>
 <li>
-<p>BE的计算开始于股东权益的账面价值，书中加上了递延税和投资税收抵免修正了税收效应对价值的影响，最后再从中减去优先股的账面价值</p>
+<p>第三条原则。假如一项改变足够大，可以永久改变长期历史趋势，那么任何人都无法预测社会整体将如何改变。</p>
 </li>
 <li>
-<p>BE的计算结果可能为负，数据处理时会舍去这些数据</p>
+<p>第四条原则。新型社会无法从纸面上创造出来。换句话说，你无法提前设计新型社会，并期待该社会在得到建立之后会按照设计来运行。 第三条与第四条原则是人类社会复杂性的结果。人类行为的改变将会影响社会经济与物质环境，经济与环境互为影响，而社会与经济的改变又将以无法预测的方式作用于人类行为。因果律的网络过于复杂，任何人都无法理清并理解。</p>
 </li>
 <li>
-<p>计算市场权益通常使用的是市场价值，即任意指定年份12月的流通股数量乘以价格</p>
-</li>
-<li>
-<p>最后，匹配BE和ME的时间。最标准的方法是Fama和French的做法：第y个财年年底的数据计算的账面净值和同一年y年底计算的市场价值进行匹配（对于每年1月作为会计年底的公司，账面净值将于给定年度1月底进行计算，市场价值将于同年12月底计算，即时间差最多11个月）</p>
-</li>
-<li>
-<p>因为计算年份y账面市值比所用的数据在y+1年6月才公布，为了确保数据可以公开获取，年份y+1的6月到年份y+2的5月的BM使用年份y数据计算而得</p>
-</li>
-<li>
-<p><strong>即年度y+1的6月到年度y+2的5月期间月份t的账面市值比，可以看作每个自然年度y年底的权益账面价值除以年度y年底即12月的市场价值。</strong></p>
+<p>第五条原则。人们并不有意识地并理性地选择他们所属社会的形态。是通过社会演化而形成，不受人的理性控制。第五条原则是前四条的结果。</p>
 </li>
 </ul>
-<h3 id="描述性统计等结论美股实证">描述性统计等结论（美股实证）</h3>
-<ul>
-<li>BM具有非常明显正偏态分布，也有肥尾特性</li>
-<li>有效且能获得的BM比β和MktCap少，缺失值较多</li>
-<li>BM和lnBM的皮尔逊积矩相关系数非常高（斯皮尔曼为1）BM和市场贝塔，股票规模是负相关的</li>
-<li>BM和lnBM有比较显著的持续性，即使滞后期到了5年持续性也很高。在所有滞后期中lnBM的持续性都比BM略高</li>
-</ul>
-<h3 id="价值因子fama和french三因子模型">价值因子，Fama和French三因子模型</h3>
-<p>Fama 和 French构建了一个0成本组合，持有高账面市值比的股票多头头寸和低账面市值比的空头头寸，并把这个组合成为HML</p>
-<p>FF风险模型常被用于评估组合是否产生不是由于对风险因素敏感所得的平均收益，三因子模型包含三个风险因子：MKT，SMB，HML。这些组合中的每一个收益旨在代替与获取一个给定风险相关的收益，同时与其他风险有最少的接触</p>
-<ul>
-<li>如果α统计上异于0，表明组合产生超额收益且不是对市场，规模和价值因素的敏感性产生</li>
-</ul>
-<h3 id="账面市值比和股票收益">账面市值比和股票收益</h3>
-<p>在这个部分我将在A股上检验价值效应。<br>
-在实践过程中值得注意的是，用于计算BM的分子BE和分母ME，采用不同处理方法时对结果会产生显著的影响：例如Bali的实证资产定价在计算分母ME时选用了<strong>流通市值</strong>，而因子投资方法与实践一书则采用了<strong>总市值</strong>；对应地，前者的分母BE计算方法为：<strong>BE = SEQ（股东权益）+TXDB（延递税）+ITCB（投资税收抵免）-BVPS（优先股账面价值）</strong>，后者的分母BE计算方法为<strong>总股东权益-少数股东权益</strong>。从BM的计算结果看，前者得出的BM会比后者大。另一方面，计算分子和分母的时间需要统一匹配，我选用的方法为：市值选用最新数据；对于来自资产负债表的数据，t年5月后的股东权益选用上一年的年报数据，t年5月前的股东权益选用上两年的年报数据。</p>
-<p>考虑到数据获取的便利程度以及对美国延递税等的不了解，后文的实证检验将采用因子投资方法与实践的BM计算方法（除去少数股东权益的总股东权益/总市值），而在双变量排序和权重计算中仍然沿用Bali的方法——采用流通市值作为排序变量以及市值权重。<br>
-由于最后实证检验的结果差强人意，价值溢价并不明显（可能存在暂时未知的数据处理问题），最后我将观察价值因子HML最近20年的表现，并尝试简单复制Liu et al.2019采用EP代替BM的方法再次对A股进行检验。</p>
-<h4 id="1-单变量组合分析">1、 单变量组合分析</h4>
-<p>根据BM排序而形成十分位数组合进行单变量组合分析，结果如表10.1所示</p>
-<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1614917806222.png" alt="" loading="lazy"></figure>
-<p>首先看10-1组合：在市值加权组合下，并没有检测出显著的价值溢价，高减低组合的经Newey West调整的T统计量仅为0.91；在等权重组合中，高减低组合的经Newey West调整的T统计量为2.07，在统计上显著。<br>
-再观察单调性：市值加权组合的第6到第10十分位收益单调递增，在BM较低组合则不明显；等权重组合从第1十分位到第10十分位的收益则呈现了更好的单调性，从第1十分位到第8十分位满足单调递增，最后的8，9，10十分位大体收益相近。</p>
-<h4 id="2-双变量组合分析">2、双变量组合分析</h4>
-<p>接下来将MktCap（流通市值）作为第二个排序变量，通过双变量独立排序进一步检测A股的价值溢价效应。根据市值和BM将股票各分为5组，一共形成25个组合，采用市值加权和等权重方法分别计算组合超额收益，结果如表10.2所示：</p>
-<figure data-type="image" tabindex="2"><img src="https://dorianhung.github.io/post-images/1614918169342.png" alt="" loading="lazy"></figure>
-<p>无论是从表中的A部分还是B部分都可以发现，市值最大组（MktCap5）的BM差异组合无论是超额收益的数值还是显著性，相比于其他组合都是最低的（Bali在美股的检验中也发现了相同现象），市值加权下最大市值组的BM5-1组合经Newey West调整t统计量为0.55，等权重组合为0.49，在统计上均不显著异于0，总体的趋势为：市值越小的股票价值效应越显著，且只有MktCap1和MktCap2的BM5-1组合在统计上显著。<br>
-市值加权和等权重组合产生的结果是类似的，因为市值本身是排序变量，每个组合中股票的市值是相似的，所以采用市值加权不会带来很大影响。<br>
-最后，在加入了市值为排序变量进行双变量独立排序分析后，<strong>得出了价值效应只存在于中小市值股票中的结论。</strong></p>
-<h4 id="1053-fama和macbeth回归分析">10.5.3 Fama和MacBeth回归分析</h4>
-<p>现在用FM回归继续检验BM和股票未来收益的关系，考虑到BM和Size分布的高偏度，将BM和市值取对数作为回归自变量，结果如表10.3所示：</p>
-<figure data-type="image" tabindex="3"><img src="https://dorianhung.github.io/post-images/1614918895391.png" alt="" loading="lazy"></figure>
-<p>列（1）使用lnBM作为唯一自变量；回归得到lnBM的平均斜率系数为1.21，经Newey West调整T统计量为1.79；列（2）使用lnBM和Size作为自变量；这时lnBM平均斜率为1.28，经Newey West调整T统计量为2.18；Size平均斜率为-0.45，且显著的与收益呈现负相关关系；列（3）使用lnBM和β作为自变量；lnBM的显著性相比前两组下降，β平均斜率和统计性表现均较差；列（4）使用lnBM，β和Size作为自变量，lnBM和Size的数值均有统计意义，β仍没有表现出明显的和收益的关系。</p>
-<p>在四组FM回归中，lnBM和未来收益均表现了正向关系，Size为负向关系且十分显著，β平均斜率为负，但平均斜率和t值都很小。</p>
-<h3 id="ep和股票收益">EP和股票收益</h3>
-<p>接下来参考Liu et al.2019采用EP代替BM的方法对A股进行检验，在下文的检验中采用简化的数据处理方法：①对PE取倒数，舍去负值得到EP代替BM进行排序、回归；②剔除市值最小的30%的股票（在FM回归时只对市值上限0.5%水平进行缩尾所谓）<br>
-论文中对此的解释大体可以概括为：①选用EP作为价值代理是根据“赛马”结果得出的；②由于A股借壳上市的存在，需要剔除市值最小的30%的股票（壳公司特点），因为这些公司的基本面数据不能用于预测未来收益。</p>
-<h4 id="组合分析">组合分析</h4>
-<p>单变量组合分析（表10.4）及双变量组合分析（表10.5）的结果如下所示：<br>
-<img src="https://dorianhung.github.io/post-images/1614936010010.png" alt="" loading="lazy"></p>
-<figure data-type="image" tabindex="4"><img src="https://dorianhung.github.io/post-images/1614936037538.png" alt="" loading="lazy"></figure>
-<p>使用EP代替BM后，在单变量组合分析中，EP各分组展现出了较好的单调性，高减低组合在市值加权和等权重组中均统计上显著；在加入市值作为排序变量的双变量独立中，与BM类似，市值最大的股票EP5-1组合显著性最弱，但EP5-1组合在不同的市值统计上均表现出显著，总之，选用EP检测出了更强的价值溢价。</p>
-<h4 id="fm回归">FM回归</h4>
-<p>接下来同样进行FM回归，结果如表10.6：<br>
-<img src="https://dorianhung.github.io/post-images/1614936041929.png" alt="" loading="lazy"><br>
-列1~4的排序方法和BM一致，从各列结果可以发现EP和未来收益表现为正向关系，加入Size作为回归变量后EP的平均斜率更加显著，相比BM，Size的显著性弱一些；同时，在回归系数的时间序列运用describe()函数（未在表中给出）也可以发现，EP平均斜率系数很大且在时间序列上存在极端值，最大和最小EP斜率系数的差距非常夸张，从经济意义上不能得出常理之内的结论。</p>
-<p>当然，需要重申的是这里对论文的复刻非常不严谨，仅仅参考了作者的思路进行非常简单的实证检验（后续待补充），上述FM回归得到了标准差非常大的EP斜率系数，组合分析结果显著性不如论文中所述，尽管如此，我们也能隐约发现EP代替BM后的表现确实不错；论文的Introduction部分写道“在中国复制美国模式是值得商榷的，两国环境的差异应决定了独特的探索方法”，对于做到目前为止的读书笔记中A股实证检验，给予了我一定的提醒与启发。</p>
-<p>最后，让我们观察价值因子HML在A股最近二十年的表现，（数据源于factorwar.com）:</p>
-<pre><code class="language-python">FF5 = pd.read_csv('Fama-French-5factors.csv')
-#时间序列处理
-FF5['date'] = pd.to_datetime(FF5['date']) 
-FF5 = FF5.set_index('date')
-
-FF5['2000':'2020']['HML'].plot()
-</code></pre>
-<figure data-type="image" tabindex="5"><img src="https://dorianhung.github.io/post-images/1613736597427.png" alt="" loading="lazy"></figure>
-<p>HML因子平均收益率在过去二十年为0.0077、2000年到2010年为0.0150、而2010年到2020年为-0.0025；以2000年为起点，十年为窗口遍历HML因子（月度）并用t检验其是否显著异于0，从2005年开始，即2005-2015，除去2007-2017，HML不显著异于0，其中2010-2020的t值仅为-0.38。这似乎可以得出一条模糊的结论：2000年到2010年这十年的价值因子表现优于2010年到2020年，且后者的表现差强人意。</p>
 
             </div>
             <div class="post-footer">
@@ -646,7 +358,7 @@ FF5['2000':'2020']['HML'].plot()
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/" title="实证资产定价（四）价值溢价">https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/</a>
+      <a href="https://dorianhung.github.io/post/some-principles-of-history/" title="SOME PRINCIPLES OF HISTORY">https://dorianhung.github.io/post/some-principles-of-history/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -659,15 +371,11 @@ FF5['2000':'2020']['HML'].plot()
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="SOME PRINCIPLES OF HISTORY" href="https://dorianhung.github.io/post/some-principles-of-history/">SOME PRINCIPLES OF HISTORY</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="SOME PRINCIPLES OF HISTORY" href="https://dorianhung.github.io/post/some-principles-of-history/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="实证资产定价（三）规模效应" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-san-gui-mo-xiao-ying/">实证资产定价（三）规模效应</a>
-        <a class="nav-mobile-next" title="实证资产定价（三）规模效应" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-san-gui-mo-xiao-ying/">下一篇</a>
+        <a class="nav-pc-next" title="实证资产定价（四）价值溢价" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/">实证资产定价（四）价值溢价</a>
+        <a class="nav-mobile-next" title="实证资产定价（四）价值溢价" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>

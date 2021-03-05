@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dorianhung.github.io</id>
     <title>Dorain&apos;s Blog</title>
-    <updated>2021-02-19T11:54:16.758Z</updated>
+    <updated>2021-03-05T10:15:48.401Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dorianhung.github.io"/>
     <link rel="self" href="https://dorianhung.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://dorianhung.github.io/images/avatar.png</logo>
     <icon>https://dorianhung.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Dorain&apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[SOME PRINCIPLES OF HISTORY]]></title>
+        <id>https://dorianhung.github.io/post/some-principles-of-history/</id>
+        <link href="https://dorianhung.github.io/post/some-principles-of-history/">
+        </link>
+        <updated>2021-02-27T15:26:23.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>在此请将历史想象为两个组成部分的总和：一个是不规则组成部分，由无法预知也不遵循任何明显模式的事件组成；另一个是规则组成部分，由长期历史趋势组成。我们在这里考虑的是长期趋势。</p>
+</li>
+<li>
+<p>第一条原则。假如一个小改变影响了长期历史趋势，这种影响只能是暂时性的，趋势很快就能逆转回到原来的状态。如果某个小改变看似在长期历史趋势当中取得了长期影响，这只是因为这个改变的方向与大趋势相一致，因此趋势没有得到改变，只是向前推进了一步。 第一原则基本上就是同义反复。假如某个趋势相对小改变而言不够稳定，这一趋势就会随机发展而非追寻特定方向，换句话说就是根本无法成为长期趋势。</p>
+</li>
+<li>
+<p>第二条原则。假如一项改变足够大，可以永久改变长期历史趋势，那这项改变必然影响整个社会。换言之，社会体系中的各个部分都是相关的，不可能永久性改变任何重要部分而不改变所有其他部分。</p>
+</li>
+<li>
+<p>第三条原则。假如一项改变足够大，可以永久改变长期历史趋势，那么任何人都无法预测社会整体将如何改变。</p>
+</li>
+<li>
+<p>第四条原则。新型社会无法从纸面上创造出来。换句话说，你无法提前设计新型社会，并期待该社会在得到建立之后会按照设计来运行。 第三条与第四条原则是人类社会复杂性的结果。人类行为的改变将会影响社会经济与物质环境，经济与环境互为影响，而社会与经济的改变又将以无法预测的方式作用于人类行为。因果律的网络过于复杂，任何人都无法理清并理解。</p>
+</li>
+<li>
+<p>第五条原则。人们并不有意识地并理性地选择他们所属社会的形态。是通过社会演化而形成，不受人的理性控制。第五条原则是前四条的结果。</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[实证资产定价（四）价值溢价]]></title>
         <id>https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-si-jie-zhi-yi-jie/</id>
@@ -55,46 +83,66 @@
 <p>因为计算年份y账面市值比所用的数据在y+1年6月才公布，为了确保数据可以公开获取，年份y+1的6月到年份y+2的5月的BM使用年份y数据计算而得</p>
 </li>
 <li>
-<p><strong>即，对于本书月度分析而言，年度y+1的6月到年度y+2的5月期间月份t的账面市值比，可以看作每个自然年度y年底的权益账面价值除以年度y年底即12月的市场价值。</strong></p>
+<p><strong>即年度y+1的6月到年度y+2的5月期间月份t的账面市值比，可以看作每个自然年度y年底的权益账面价值除以年度y年底即12月的市场价值。</strong></p>
 </li>
 </ul>
-<h3 id="描述性统计">描述性统计</h3>
+<h3 id="描述性统计等结论美股实证">描述性统计等结论（美股实证）</h3>
 <ul>
 <li>BM具有非常明显正偏态分布，也有肥尾特性</li>
 <li>有效且能获得的BM比β和MktCap少，缺失值较多</li>
-</ul>
-<h3 id="相关性">相关性</h3>
-<ul>
 <li>BM和lnBM的皮尔逊积矩相关系数非常高（斯皮尔曼为1）BM和市场贝塔，股票规模是负相关的</li>
-</ul>
-<h3 id="持续性">持续性</h3>
-<ul>
 <li>BM和lnBM有比较显著的持续性，即使滞后期到了5年持续性也很高。在所有滞后期中lnBM的持续性都比BM略高</li>
 </ul>
-<h3 id="账面市值比和股票收益">账面市值比和股票收益</h3>
-<p>####1、 单变量组合分析<br>
-根据BM排序而形成十分位数组合进行单变量组合分析，结果如表10.1所示</p>
-<p><img src="https://dorianhung.github.io/post-images/1613733222662.png" alt="" loading="lazy"><br>
-从表中A部分可以看出，在市值加权组合下并没有检测出显著的价值溢价，高减低组合经Newey West调整的T统计量仅为-0.24；而在等权重组合中，从第1十分位到第10十分位的收益则呈现出了一定的单调性（增），高减低组合经Newey West调整的T统计量为1.76，具有一定统计意义。</p>
-<h4 id="2-双变量组合分析">2、双变量组合分析</h4>
-<p>现在我们将MktCap作为控制变量，通过双变量独立排序进一步检测价值溢价。根据市值和BM将股票各分为5组，一共形成25个组合，采用市值加权和等权重方法分别计算组合超额收益，结果如表10.2所示：</p>
-<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1613733637878.png" alt="" loading="lazy"></figure>
-<p>从表中可以发现，无论采用等权重还是市值加权，市值最大组（MktCap5）的BM差异组合无论是超额收益的数值还是显著性，相比于其他组合都是最低的，Bali在美股的检验中也发现了相同现象，书中得出了价值效应在大市值股票中不存在的结论，虽然在A股各组显著性均不够高，但各组数据的趋势大致相同。<br>
-另外，市值加权和等权重组合产生了相似的结果，Bali在书中提到了解释：因为市值本身是排序变量，每个组合中股票的市值是相似的，所以采用市值加权不会带来很大影响。<br>
-最后，在控制了市值后，各个市值组合的BM差异组合都无法证明A股存在价值溢价</p>
-<h4 id="1053-fama和macbeth回归分析">10.5.3 Fama和MacBeth回归分析</h4>
-<p>现在用FM回归继续检验BM和股票未来收益的关系，考虑到BM和Size分布的高偏度，将BM和市值取对数作为回归自变量，结果如表10.3所示：</p>
-<p><img src="https://dorianhung.github.io/post-images/1613734653141.png" alt="" loading="lazy"><br>
-列（1）使用lnBM作为唯一自变量；回归得到lnBM的平均斜率系数为0.24，Newey West调整T统计量为2.02，这次检验出了BM和股票未来收益之间具有一定统计意义的正相关关系。<br>
-列（2）使用lnBM和Size作为自变量；这时lnBM平均斜率下降到0.19且T统计量下降到1.51，而Size检测出了显著的与收益的负相关关系。<br>
-列（3）使用lnBM和β作为自变量；和Size类似，lnBM负相关关系显著性下降，而β却未来收益有着显著负相关关系。<br>
-列（4）使用lnBM，β和Size作为自变量，出乎意料地，三个自变量均检测了显著的正相关和负相关性</p>
-<h3 id="106价值因子fama和french三因子模型">10.6价值因子，Fama和French三因子模型</h3>
+<h3 id="价值因子fama和french三因子模型">价值因子，Fama和French三因子模型</h3>
 <p>Fama 和 French构建了一个0成本组合，持有高账面市值比的股票多头头寸和低账面市值比的空头头寸，并把这个组合成为HML</p>
 <p>FF风险模型常被用于评估组合是否产生不是由于对风险因素敏感所得的平均收益，三因子模型包含三个风险因子：MKT，SMB，HML。这些组合中的每一个收益旨在代替与获取一个给定风险相关的收益，同时与其他风险有最少的接触</p>
 <ul>
 <li>如果α统计上异于0，表明组合产生超额收益且不是对市场，规模和价值因素的敏感性产生</li>
 </ul>
+<h3 id="账面市值比和股票收益">账面市值比和股票收益</h3>
+<p>在这个部分我将在A股上检验价值效应。<br>
+在实践过程中值得注意的是，用于计算BM的分子BE和分母ME，采用不同处理方法时对结果会产生显著的影响：例如Bali的实证资产定价在计算分母ME时选用了<strong>流通市值</strong>，而因子投资方法与实践一书则采用了<strong>总市值</strong>；对应地，前者的分母BE计算方法为：<strong>BE = SEQ（股东权益）+TXDB（延递税）+ITCB（投资税收抵免）-BVPS（优先股账面价值）</strong>，后者的分母BE计算方法为<strong>总股东权益-少数股东权益</strong>。从BM的计算结果看，前者得出的BM会比后者大。另一方面，计算分子和分母的时间需要统一匹配，我选用的方法为：市值选用最新数据；对于来自资产负债表的数据，t年5月后的股东权益选用上一年的年报数据，t年5月前的股东权益选用上两年的年报数据。</p>
+<p>考虑到数据获取的便利程度以及对美国延递税等的不了解，后文的实证检验将采用因子投资方法与实践的BM计算方法（除去少数股东权益的总股东权益/总市值），而在双变量排序和权重计算中仍然沿用Bali的方法——采用流通市值作为排序变量以及市值权重。<br>
+由于最后实证检验的结果差强人意，价值溢价并不明显（可能存在暂时未知的数据处理问题），最后我将观察价值因子HML最近20年的表现，并尝试简单复制Liu et al.2019采用EP代替BM的方法再次对A股进行检验。</p>
+<h4 id="1-单变量组合分析">1、 单变量组合分析</h4>
+<p>根据BM排序而形成十分位数组合进行单变量组合分析，结果如表10.1所示</p>
+<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1614917806222.png" alt="" loading="lazy"></figure>
+<p>首先看10-1组合：在市值加权组合下，并没有检测出显著的价值溢价，高减低组合的经Newey West调整的T统计量仅为0.91；在等权重组合中，高减低组合的经Newey West调整的T统计量为2.07，在统计上显著。<br>
+再观察单调性：市值加权组合的第6到第10十分位收益单调递增，在BM较低组合则不明显；等权重组合从第1十分位到第10十分位的收益则呈现了更好的单调性，从第1十分位到第8十分位满足单调递增，最后的8，9，10十分位大体收益相近。</p>
+<h4 id="2-双变量组合分析">2、双变量组合分析</h4>
+<p>接下来将MktCap（流通市值）作为第二个排序变量，通过双变量独立排序进一步检测A股的价值溢价效应。根据市值和BM将股票各分为5组，一共形成25个组合，采用市值加权和等权重方法分别计算组合超额收益，结果如表10.2所示：</p>
+<figure data-type="image" tabindex="2"><img src="https://dorianhung.github.io/post-images/1614918169342.png" alt="" loading="lazy"></figure>
+<p>无论是从表中的A部分还是B部分都可以发现，市值最大组（MktCap5）的BM差异组合无论是超额收益的数值还是显著性，相比于其他组合都是最低的（Bali在美股的检验中也发现了相同现象），市值加权下最大市值组的BM5-1组合经Newey West调整t统计量为0.55，等权重组合为0.49，在统计上均不显著异于0，总体的趋势为：市值越小的股票价值效应越显著，且只有MktCap1和MktCap2的BM5-1组合在统计上显著。<br>
+市值加权和等权重组合产生的结果是类似的，因为市值本身是排序变量，每个组合中股票的市值是相似的，所以采用市值加权不会带来很大影响。<br>
+最后，在加入了市值为排序变量进行双变量独立排序分析后，<strong>得出了价值效应只存在于中小市值股票中的结论。</strong></p>
+<h4 id="1053-fama和macbeth回归分析">10.5.3 Fama和MacBeth回归分析</h4>
+<p>现在用FM回归继续检验BM和股票未来收益的关系，考虑到BM和Size分布的高偏度，将BM和市值取对数作为回归自变量，结果如表10.3所示：</p>
+<figure data-type="image" tabindex="3"><img src="https://dorianhung.github.io/post-images/1614918895391.png" alt="" loading="lazy"></figure>
+<p>列（1）使用lnBM作为唯一自变量；回归得到lnBM的平均斜率系数为1.21，经Newey West调整T统计量为1.79；列（2）使用lnBM和Size作为自变量；这时lnBM平均斜率为1.28，经Newey West调整T统计量为2.18；Size平均斜率为-0.45，且显著的与收益呈现负相关关系；列（3）使用lnBM和β作为自变量；lnBM的显著性相比前两组下降，β平均斜率和统计性表现均较差；列（4）使用lnBM，β和Size作为自变量，lnBM和Size的数值均有统计意义，β仍没有表现出明显的和收益的关系。</p>
+<p>在四组FM回归中，lnBM和未来收益均表现了正向关系，Size为负向关系且十分显著，β平均斜率为负，但平均斜率和t值都很小。</p>
+<h3 id="ep和股票收益">EP和股票收益</h3>
+<p>接下来参考Liu et al.2019采用EP代替BM的方法对A股进行检验，在下文的检验中采用简化的数据处理方法：①对PE取倒数，舍去负值得到EP代替BM进行排序、回归；②剔除市值最小的30%的股票（在FM回归时只对市值上限0.5%水平进行缩尾所谓）<br>
+论文中对此的解释大体可以概括为：①选用EP作为价值代理是根据“赛马”结果得出的；②由于A股借壳上市的存在，需要剔除市值最小的30%的股票（壳公司特点），因为这些公司的基本面数据不能用于预测未来收益。</p>
+<h4 id="组合分析">组合分析</h4>
+<p>单变量组合分析（表10.4）及双变量组合分析（表10.5）的结果如下所示：<br>
+<img src="https://dorianhung.github.io/post-images/1614936010010.png" alt="" loading="lazy"></p>
+<figure data-type="image" tabindex="4"><img src="https://dorianhung.github.io/post-images/1614936037538.png" alt="" loading="lazy"></figure>
+<p>使用EP代替BM后，在单变量组合分析中，EP各分组展现出了较好的单调性，高减低组合在市值加权和等权重组中均统计上显著；在加入市值作为排序变量的双变量独立中，与BM类似，市值最大的股票EP5-1组合显著性最弱，但EP5-1组合在不同的市值统计上均表现出显著，总之，选用EP检测出了更强的价值溢价。</p>
+<h4 id="fm回归">FM回归</h4>
+<p>接下来同样进行FM回归，结果如表10.6：<br>
+<img src="https://dorianhung.github.io/post-images/1614936041929.png" alt="" loading="lazy"><br>
+列1~4的排序方法和BM一致，从各列结果可以发现EP和未来收益表现为正向关系，加入Size作为回归变量后EP的平均斜率更加显著，相比BM，Size的显著性弱一些；同时，在回归系数的时间序列运用describe()函数（未在表中给出）也可以发现，EP平均斜率系数很大且在时间序列上存在极端值，最大和最小EP斜率系数的差距非常夸张，从经济意义上不能得出常理之内的结论。</p>
+<p>当然，需要重申的是这里对论文的复刻非常不严谨，仅仅参考了作者的思路进行非常简单的实证检验（后续待补充），上述FM回归得到了标准差非常大的EP斜率系数，组合分析结果显著性不如论文中所述，尽管如此，我们也能隐约发现EP代替BM后的表现确实不错；论文的Introduction部分写道“在中国复制美国模式是值得商榷的，两国环境的差异应决定了独特的探索方法”，对于做到目前为止的读书笔记中A股实证检验，给予了我一定的提醒与启发。</p>
+<p>最后，让我们观察价值因子HML在A股最近二十年的表现，（数据源于factorwar.com）:</p>
+<pre><code class="language-python">FF5 = pd.read_csv('Fama-French-5factors.csv')
+#时间序列处理
+FF5['date'] = pd.to_datetime(FF5['date']) 
+FF5 = FF5.set_index('date')
+
+FF5['2000':'2020']['HML'].plot()
+</code></pre>
+<figure data-type="image" tabindex="5"><img src="https://dorianhung.github.io/post-images/1613736597427.png" alt="" loading="lazy"></figure>
+<p>HML因子平均收益率在过去二十年为0.0077、2000年到2010年为0.0150、而2010年到2020年为-0.0025；以2000年为起点，十年为窗口遍历HML因子（月度）并用t检验其是否显著异于0，从2005年开始，即2005-2015，除去2007-2017，HML不显著异于0，其中2010-2020的t值仅为-0.38。这似乎可以得出一条模糊的结论：2000年到2010年这十年的价值因子表现优于2010年到2020年，且后者的表现差强人意。</p>
 ]]></content>
     </entry>
     <entry>
@@ -200,7 +248,7 @@
 <p>其中r是股票i在时段t内的<strong>超额收益</strong>，MKT是市场组合(市场因子)在时段t内的超额收益，ε是回归残差。如果α为0，两边取期望则得到CAPM，股票市场β则可以看作回归结果中斜率系数的估计值</p>
 </li>
 <li>
-<p>估计市场β可以采用不同的数据频率和周期，常用的方法是<strong>一年的日度超额收益</strong>估计上式（t-11到t共12个月日度数据），这种情况下至少需要200个数据点。如果采用月度数据，常用过去5年的月度超额收益。</p>
+<p>估计市场β可以采用不同的数据频率和周期，常用的方法是<strong>一年的日度超额收益</strong>估计上式（t-11到t共<strong>12个月</strong>日度数据），这种情况下至少需要200个数据点。如果采用月度数据，常用过去5年的月度超额收益。</p>
 </li>
 <li>
 <p>测量周期变长，贝塔估计值的标准差变小（异常值影响变小），意味着可能接近贝塔的真实值；此外，更多的数据点导致样本偏向更大更成熟的公司；最后，较长周期测量测量间的相关系数更大（短周期噪声更大）</p>
@@ -231,36 +279,65 @@
         </link>
         <updated>2021-02-11T15:21:05.000Z</updated>
         <content type="html"><![CDATA[<p>本系列是基于《Empirical Asset Pricing》及《因子投资方法与实践》的读书笔记集合，旨在加深对实证资产定价的方法论的理解并尝试运用书中于A股实证检验。本篇将简要实证资产的预备知识，对应Empirical Asset Pricing的前七章内容。</p>
-<h3 id="11样本">1.1样本</h3>
-<p>“在这本书中所用到的每一个统计方法都是基于面板数据的，面板中的每一条都反映了一个个体和时间的组合“</p>
+<h2 id="1样本">1.样本</h2>
+<h3 id="11样本和数据">1.1样本和数据</h3>
 <ul>
-<li>个体（指股票）用i来表示，时间用t（年，月等）表示；</li>
-<li>后文针对A股实证部分，股票收益率，账面价值等数据来自JoinQuant.com，无风险收益率等来自石川的factorwar.com</li>
+<li>
+<p>公式中的个体（指股票）用i来表示，时间用t（年，月等）表示；</p>
+</li>
+<li>
+<p>后续针对A股实证部分：股票价格，财务信息等数据来自聚宽（JoinQuant.com），无风险收益和因子模型等数据来自factorwar.com，通过python实现回归、统计等检验。</p>
+</li>
+<li>
+<p>聚宽提供了2005至今的股票数据，对股票池的处理为：剔除了上市不满一年的次新股，剔除ST股，另外计算贝塔时剔除过去一年中可获得数据少于160的股票</p>
+</li>
+<li>
+<p>检验开始日期为2006年1月25日，结束日期为2020年12月21日，除了计算贝塔时采用日度数据，其余均为月度数据</p>
+<p>聚宽主要数据调用时的参数设定：</p>
+</li>
 </ul>
-<h3 id="12缩尾和截尾">1.2缩尾和截尾</h3>
+<pre><code class="language-python">#获取指定日期所有A股，返回股票代码，上市时间，退市时间等的dataframe
+ stk = get_all_securities(types=['stock'], date=date)
+    
+#获取时间段内的股价信息
+get_price(Astock #包含多只股票代码的list
+                      , start_date = beginDate
+                      , end_date = endDate
+                      , frequency='daily'   #最低频率为日度价格数据
+                      , fields=['pre_close','close']  
+                      , skip_paused=True #是否跳过停牌股票，计算未来一个月的收益时会改为False
+                      , fq='post'#后复权
+                      , panel=False)
+
+#财务数据：
+#获取市值数据（valuation表）下例为流通市值（100 000 000），返回columns为代码和市值的datraframe
+get_fundamentals(query(valuation).filter(
+      valuation.code.in_(stk_list)), date = date
+                      )[['code','circulating_market_cap']]   
+
+#获取资产负债数据（balance表），下例为股东权益，返回columns为代码和股东权益的datraframe
+get_fundamentals(query(balance).filter(
+    balance.code.in_(stk_list)), statDate = year
+                      )[['code','total_owner_equities']]   
+
+</code></pre>
+<p>P.S.聚宽数据库提供了个股部分因子数据，但其标准化处理方式与传统方法不同，在后文的A股实证检验中我将使用传统的方法对数据进行计算和标准化。</p>
+<h3 id="2缩尾和截尾">2.缩尾和截尾</h3>
 <p>为了排除极端数据对结果的影响通常会对其进行处理，常用的方法有如下两种：</p>
 <ul>
 <li>缩尾：高于或低于某特定百分位的极端值被赋值为该特定百分位的值。如取h=l=0.5%，则99.5百分位数和0.5百分位数以外的数字被赋值为百分位对应的数。<br>
 -截尾：百分位数外的数据设定为缺失（舍去）</li>
 </ul>
-<h3 id="13newey-west调整">1.3Newey West调整</h3>
+<p>对于后续的A股实证检验，对横截面的极端值如无特殊说明则采用如下默认处理方式：</p>
+<ul>
+<li>进行组合分析时进行0.5%水平的截尾</li>
+<li>进行FM回归时考虑代码的使用winsorize函数进行上下0.5%水平的缩尾</li>
+</ul>
+<h3 id="3newey-west调整">3.Newey West调整</h3>
 <p>经典线性模型假设随机扰动项独立，同方差，但在广义线性回归中，这两个假设均可以被打破从而得到两个常见的特性：异方差和自相关。<br>
 对此Newey和West（1987）提出了方法来解决异方差和自相关性对P值或T统计量的影响<br>
 Newey和West调整所需要唯一的变量输入是调整时用到的滞后期数，计量经济学软件通常设定滞后期为4(T/100)^a ，T是时间序列时段的个数，a=2/9或4/25</p>
-<h2 id="第二章-描述性统计">第二章---描述性统计</h2>
-<p>大部分实证研究文章会在讨论结果之前对数据进行描述性统计 ，目标是对所使用的数据和样本特征有一个全面扼要的了解</p>
-<h3 id="21-实施步骤">2.1 实施步骤</h3>
-<p>描述性统计由两步组成<br>
-1、对每一个时段t，计算给定变量X分布特征<br>
-2、计算周期横截面特征的时间序列特征（大部分情况是均值，对样本所有时段t求平均）</p>
-<p><code>df.describe()</code></p>
-<h2 id="第三章-相关性">第三章---相关性</h2>
-<p>相关性对变量之间的关系给出了明示，除了展现变量的描述性统计研究者通常还会展示主要变量之间的相关性</p>
-<h3 id="31实施步骤">3.1实施步骤</h3>
-<p>相关系数的步骤为两步：<br>
-1、对每个时段t计算两个变量X，Y横截面相关系数；<br>
-2、计算横截面相关系数的时间序列平均值</p>
-<h4 id="311期间横截面相关系数">3.1.1期间横截面相关系数</h4>
+<h3 id="4期间横截面相关系数">4.期间横截面相关系数</h3>
 <p>①pearson积矩相关系数：线性关系强度</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>ρ</mi><mi>t</mi></msub><mrow><mo fence="true">(</mo><mi>X</mi><mo separator="true">,</mo><mi>Y</mi><mo fence="true">)</mo></mrow><mo>=</mo><mfrac><mrow><mi>C</mi><mi>o</mi><mi>v</mi><mrow><mo fence="true">(</mo><mi>X</mi><mo separator="true">,</mo><mi>Y</mi><mo fence="true">)</mo></mrow></mrow><mrow><msqrt><mrow><mi>D</mi><mi>X</mi></mrow></msqrt><msqrt><mrow><mi>D</mi><mi>Y</mi></mrow></msqrt></mrow></mfrac></mrow><annotation encoding="application/x-tex">\rho _t\left( X,Y \right) =\frac{Cov\left( X,Y \right)}{\sqrt{DX}\sqrt{DY}}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">ρ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.357em;vertical-align:-0.93em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.1833349999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9266650000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span><span style="top:-2.886665em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
@@ -284,7 +361,7 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <p>其中：</p>
 <p>d<sub>i,t</sub>  =  x<sub>i,t</sub> - y<sub>i,t</sub></p>
 <p>注：计算斯皮尔曼等级相关系数时不可进行缩尾处理</p>
-<h3 id="32阐述相关系数">3.2阐述相关系数</h3>
+<h3 id="5相关系数">5.相关系数</h3>
 <ul>
 <li>相关性分析能够发现多元统计中潜在问题：两个变量如果高度相关且同作为自变量，则难以区分对因变量影响，导致回归系数中的高标准差</li>
 <li>如果斯皮尔曼等级相关系数<strong>显著大于</strong>皮尔逊积矩，说明两个变量是单调的，而非线性</li>
@@ -292,13 +369,13 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <li>皮尔逊积矩有线性假设，对回归技术的结果如<strong>Fama&amp;MacBeth</strong>回归分析更具指示性</li>
 <li>斯皮尔曼等级相关系数基于变量大小顺序，对依赖于等级或排序分析的结果如<strong>组合分析</strong>更具指示性</li>
 </ul>
-<h2 id="第四章-持续性分析">第四章---持续性分析</h2>
+<h2 id="6持续性分析">6.持续性分析</h2>
 <p>很多变量被用来捕获样本元素的持续性特征，这意味着通过给定变量，捕获的元素特征在一定时期内被假定是稳定的，例如β就被认为持续性特征，且通常由历史数据所得。<br>
 持续性分析的基本方法是检验两个<strong>不同时点</strong>测量的给定变量横截面相关系数，如果相关性高则说明这个变量的持续性高。</p>
-<h3 id="41实施步骤">4.1实施步骤</h3>
+<h3 id="61实施步骤">6.1实施步骤</h3>
 <p>第一步：计算给定变量X在相差多个时段的横截面相关系数<br>
 第二步：计算这些相关系数的时间序列均值</p>
-<h3 id="42解释持续性">4.2解释持续性</h3>
+<h3 id="62解释持续性">6.2解释持续性</h3>
 <p>低或零持续性的原因</p>
 <ul>
 <li>测量的特征实际上并无持续性</li>
@@ -310,26 +387,26 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <li>无意捕获了某些持续性特征<br>
 高的ρ表明无论X捕获的是什么特性，他都具有持续性</li>
 </ul>
-<h2 id="第5章-组合分析">第5章---组合分析</h2>
+<h2 id="7组合分析">7.组合分析</h2>
 <p>组合分析是实证资产定价中广泛使用的方法，目标是检验横截面上两个以及以上变量之间的关系，如变量对股票未来收益的预测能力，或横截面上不同变量之间的关系。<br>
 它的优点是：非参数技术分析，不需要对横截面关系提出假设（例如线性回归要求变量关系是线性的）；<br>
 缺点是难以控制大量变量，而回归分析可以控制大量的自变量</p>
-<h3 id="51单变量组合分析">5.1单变量组合分析</h3>
+<h3 id="71单变量组合分析">7.1单变量组合分析</h3>
 <p>步骤共有四个：<br>
 第一步：计算用于分组的断点值<br>
 第二步：利用断点值分组<br>
 第三步：计算每个时间段t内，每个组合结果变量Y的均值<br>
 第四步：检验不同组合中Y的均值变化</p>
-<h4 id="511断点">5.1.1断点</h4>
+<h4 id="711断点">7.1.1断点</h4>
 <ul>
 <li>常用做法是在横截面上用均匀间隔的百分位数端点来进行分组，例如5个组合则断点为样本的20，40，60，80百分位数（分3个组合常用30，70百分位数）</li>
 <li>对每个时间段t都要形成新的组合</li>
 </ul>
-<h4 id="512组合形成">5.1.2组合形成</h4>
+<h4 id="712组合形成">7.1.2组合形成</h4>
 <ul>
 <li>计算出断点后，它可以用于任何样本集</li>
 </ul>
-<h4 id="513组合平均值">5.1.3组合平均值</h4>
+<h4 id="713组合平均值">7.1.3组合平均值</h4>
 <ul>
 <li>
 <p>第三步是计算结果变量Y的均值。许多情况下，会使用某种权重计算方法进行加权平均，常用的权重是市值（市值加权平均值）</p>
@@ -350,20 +427,19 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <p>注：结果用【超额收益】表示</p>
 </li>
 </ul>
-<h4 id="514结果总结">5.1.4结果总结</h4>
+<h4 id="714结果总结">7.1.4结果总结</h4>
 <p>组合分析主要目的是确定X和Y之间是否在横截面上存在相关关系，为此我们计算每个组合的结果变量Y在时间序列上的均值</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><msub><mover accent="true"><mi>Y</mi><mo>ˉ</mo></mover><mi>k</mi></msub><mo>=</mo><msubsup><mi>Σ</mi><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></msubsup><msub><mover accent="true"><mi>Y</mi><mo>ˉ</mo></mover><mrow><mi>k</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub></mrow><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{\bar{Y}_k=\varSigma _{t=1}^{T}\bar{Y}_{k,t}}{T}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.204331em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5183309999999999em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">ˉ</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord"><span class="mord mathit">Σ</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4518920000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">ˉ</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><msub><mover accent="true"><mi>Y</mi><mo>ˉ</mo></mover><mrow><mi>D</mi><mi>i</mi><mi>f</mi><mi>f</mi></mrow></msub><mo>=</mo><msubsup><mi>Σ</mi><mrow><mi>t</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></msubsup><msub><mover accent="true"><mi>Y</mi><mo>ˉ</mo></mover><mrow><mi>D</mi><mi>i</mi><mi>f</mi><mi>f</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub></mrow><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">\frac{\bar{Y}_{Diff}=\varSigma _{t=1}^{T}\bar{Y}_{Diff,t}}{T}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.204331em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.5183309999999999em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">ˉ</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.10764em;">f</span><span class="mord mathdefault mtight" style="margin-right:0.10764em;">f</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord"><span class="mord mathit">Σ</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-2.4518920000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">t</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">ˉ</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight" style="margin-right:0.10764em;">f</span><span class="mord mathdefault mtight" style="margin-right:0.10764em;">f</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
 <p>时间序列平均值被用作对平均时段中每个组合的结果变量的真实平均值的估计</p>
-<h4 id="515结果解释">5.1.5结果解释</h4>
-<h4 id="516结果展示">5.1.6结果展示</h4>
+<h4 id="716结果展示">7.1.6结果展示</h4>
 <ul>
 <li>常见展示为T统计量，且常被放在括号中表示</li>
 <li>组合分析的结果可以只展示平均超额收益以及Newey and West调整后的T统计量</li>
 </ul>
-<h4 id="517收益分析">5.1.7收益分析</h4>
+<h4 id="717收益分析">7.1.7收益分析</h4>
 <ul>
 <li>
 <p>当样本个体是证券，结果变量Y是收益时，平均值Y表示持有每个证券组合的收益，在这种情况下通常要额外分析，旨在检验平均收益是否是因为系统性风险因素的敏感性在横截面上变化驱动</p>
@@ -402,22 +478,22 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <p>也因此，组合分析中建议使用股票的超额收益而不是股票的原始收益作为【结果变量Y】</p>
 </li>
 </ul>
-<h3 id="52双变量独立排序的组合分析">5.2双变量独立排序的组合分析</h3>
+<h3 id="72双变量独立排序的组合分析">7.2双变量独立排序的组合分析</h3>
 <ul>
 <li>考虑相关性：如果两个排序变量高度正相关，可能导致大量个体分入两个排序值都高/低的组合中</li>
 </ul>
-<h3 id="53双变量序贯排序的组合分析">5.3双变量序贯排序的组合分析</h3>
+<h3 id="73双变量序贯排序的组合分析">7.3双变量序贯排序的组合分析</h3>
 <ul>
 <li>第二个排序变量的断点根据第一个排序变量形成的每个组形成</li>
 <li>在序贯排列中不计算第一个排序变量的平均值差异，因为序贯排列【仅被用作评估第二个排序变量X2和结果变量的关系】，即控制了X1后X2和Y的关系</li>
 </ul>
-<h2 id="第六章-fama-and-macbeth回归">第六章 Fama and MacBeth回归</h2>
-<h3 id="61实施">6.1实施</h3>
+<h2 id="8fama-and-macbeth回归">8.Fama and MacBeth回归</h2>
+<h3 id="81实施">8.1实施</h3>
 <p>第5章的组合分析是一种非参数方法，但难以包含较多的控制变量，Fama MacBeth(1973，简称FM)是检验变量关系的另一种方法，它对变量间关系做出线性假设，但能够控制大量变量</p>
 <p>FM回归需要两步：</p>
 <p>第一步：使用每个时期t的数据，运行被研究的因变量Y对X1，X2等周期性横截面回归，得到【每个自变量每个时期的斜率和截距】</p>
 <p>第二步：分析每个回归系数的时间序列，判断平均系数是否异于0</p>
-<h4 id="611周期性横截面回归">6.1.1周期性横截面回归</h4>
+<h4 id="811周期性横截面回归">8.1.1周期性横截面回归</h4>
 <ul>
 <li>
 <p>FM的第一步是以Y为因变量，对自变量进行横截面回归，横截面回归检验方程是：</p>
@@ -427,11 +503,11 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 <p>回归结果是截距和斜率系数，每个时期也会产生统计结果如R方，调整R方和回归中观测个数；此外，横截面回归不一定使用OLS（二元因变量可用加权最小二乘法logistic回归等）</p>
 </li>
 </ul>
-<h4 id="612平均横截面回归结果">6.1.2平均横截面回归结果</h4>
+<h4 id="812平均横截面回归结果">8.1.2平均横截面回归结果</h4>
 <ul>
 <li>FM第二步是计算横截面回归得到的【截距，斜率系数，R方，样本数等】的【时间序列平均值】，并判断平均系数是否显著异于0（需要Newey West调整）</li>
 </ul>
-<h3 id="62对fm回归解释">6.2对FM回归解释</h3>
+<h3 id="82对fm回归解释">8.2对FM回归解释</h3>
 <ul>
 <li>
 <p>统计上显著的平均斜率系数表给定的X和Y存在横截面关系；当不止一个自变量时，显著性表明了控制了包含在回归检验中其他的自变量的效应后，X和Y之间仍然存在关系</p>
@@ -459,11 +535,8 @@ X的大小不易理解时，可以采取以下方法：</p>
 <li>使用异象变量及多因子模型中构造因子的变量同时作为解释变量，以资产（组合或个股，常为个股）超额收益作为被解释变量，每个t进行截面回归，得到异象变量的超额收益（因子收益率），检验时间序列上均值和标准误</li>
 <li>如果控制因子变量后，异象收益仍然显著则可以认为它获得了多因子模型无法解释的超额收益</li>
 </ul>
-<h2 id="第七章-样本和市场因子">第七章 样本和市场因子</h2>
-<p>为了有效执行实证资产定价研究，深入理解所使用的样本和数据特征十分重要</p>
 <h3 id="股票收益和超额收益">股票收益和超额收益</h3>
 <ul>
-<li>退市收益-30%/-100%</li>
 <li>使用因子模型评估收益时，使用超额收益是非常重要的：无风险利率不是常数，其变动可能影响结果</li>
 <li>月度收益是预测变量被计算后，下一个月的收益：t表示预测变量计算的月份，则t+1月份为被预测的收益</li>
 </ul>
