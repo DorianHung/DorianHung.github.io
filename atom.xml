@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dorianhung.github.io</id>
     <title>Dorain&apos;s Blog</title>
-    <updated>2021-03-05T10:33:27.933Z</updated>
+    <updated>2021-03-14T10:32:23.706Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dorianhung.github.io"/>
     <link rel="self" href="https://dorianhung.github.io/atom.xml"/>
@@ -11,31 +11,91 @@
     <icon>https://dorianhung.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Dorain&apos;s Blog</rights>
     <entry>
-        <title type="html"><![CDATA[SOME PRINCIPLES OF HISTORY]]></title>
-        <id>https://dorianhung.github.io/post/some-principles-of-history/</id>
-        <link href="https://dorianhung.github.io/post/some-principles-of-history/">
+        <title type="html"><![CDATA[实证资产定价（五） 动量/反转效应]]></title>
+        <id>https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-wu-dong-liang-fan-zhuan-xiao-ying/</id>
+        <link href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-wu-dong-liang-fan-zhuan-xiao-ying/">
         </link>
-        <updated>2021-02-27T15:26:23.000Z</updated>
-        <content type="html"><![CDATA[<ul>
+        <updated>2021-03-07T14:29:35.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="定义动量反转">定义动量&amp;反转</h3>
+<p>动量效应是指股票过去一段时间（6-12个月）如果收益表现较好，那么未来也可能会有超额收益；</p>
+<ul>
 <li>
-<p>在此请将历史想象为两个组成部分的总和：一个是不规则组成部分，由无法预知也不遵循任何明显模式的事件组成；另一个是规则组成部分，由长期历史趋势组成。我们在这里考虑的是长期趋势。</p>
+<p>动量效应广泛地被认为是行为现象，行为理论模型中动量现象是意味投资者对信息滞后以及过度反应，这些模型的预测结果和中期动量及长期反转是一致的（长期中，由于投资者行为偏差产生的无效定价被纠正）</p>
 </li>
 <li>
-<p>第一条原则。假如一个小改变影响了长期历史趋势，这种影响只能是暂时性的，趋势很快就能逆转回到原来的状态。如果某个小改变看似在长期历史趋势当中取得了长期影响，这只是因为这个改变的方向与大趋势相一致，因此趋势没有得到改变，只是向前推进了一步。 第一原则基本上就是同义反复。假如某个趋势相对小改变而言不够稳定，这一趋势就会随机发展而非追寻特定方向，换句话说就是根本无法成为长期趋势。</p>
-</li>
-<li>
-<p>第二条原则。假如一项改变足够大，可以永久改变长期历史趋势，那这项改变必然影响整个社会。换言之，社会体系中的各个部分都是相关的，不可能永久性改变任何重要部分而不改变所有其他部分。</p>
-</li>
-<li>
-<p>第三条原则。假如一项改变足够大，可以永久改变长期历史趋势，那么任何人都无法预测社会整体将如何改变。</p>
-</li>
-<li>
-<p>第四条原则。新型社会无法从纸面上创造出来。换句话说，你无法提前设计新型社会，并期待该社会在得到建立之后会按照设计来运行。 第三条与第四条原则是人类社会复杂性的结果。人类行为的改变将会影响社会经济与物质环境，经济与环境互为影响，而社会与经济的改变又将以无法预测的方式作用于人类行为。因果律的网络过于复杂，任何人都无法理清并理解。</p>
-</li>
-<li>
-<p>第五条原则。人们并不有意识地并理性地选择他们所属社会的形态。是通过社会演化而形成，不受人的理性控制。第五条原则是前四条的结果。</p>
+<p>理性模型表明过去具有高收益的股票具有动量效应可能是因为他们具有较高的期望收益，因此未来也会具有更高的平均收益，这些模型无法解释长期反转现象。</p>
 </li>
 </ul>
+<p>短期反转由Jegadeesh（1990）和Lehmann（1990）所提出，指过去的股票收益和未来一周/一个月的收益之间有负的横截面关系，即购买最近表现最差的股票同时卖出最近表现较好的股票的策略能产生正收益，这是在资本资产定价实证研究中最明显直观的异象。</p>
+<ul>
+<li>反转常归因于流动性和微观结构因子，学者认为买卖价差会使股票收益产生负的序列相关，序列相关由机构因素如交易和非交易期、市场摩擦如买卖差价，或其他微观因素造成，这些论文共同的主题是验证证券收益中所包含的反转现象或是自相关都不反映公司基本面信息。</li>
+</ul>
+<h3 id="衡量动量">衡量动量</h3>
+<p>衡量动量最常见的方法是观测<strong>过去12个月到过去1个月这11个月</strong>的收益状况。</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mi>o</mi><msub><mi>m</mi><mrow><mi>i</mi><mtext>，</mtext><mi>t</mi></mrow></msub><mo>=</mo><mn>100</mn><mrow><mo fence="true">[</mo><munder><mo><mi>Π</mi></mo><mrow><mi>m</mi><mo>∈</mo><mrow><mo fence="true">{</mo><mi>t</mi><mo>−</mo><mn>11</mn><mo separator="true">;</mo><mi>t</mi><mo>−</mo><mn>1</mn><mo fence="true">}</mo></mrow></mrow></munder><mrow><mo fence="true">(</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>m</mi></mrow></msub><mo>+</mo><mn>1</mn><mo fence="true">)</mo></mrow><mo>−</mo><mn>1</mn><mo fence="true">]</mo></mrow></mrow><annotation encoding="application/x-tex">Mom_{i\text{，}t}=100\left[ \underset{m∈\left\{ t-11;t-1 \right\}}{\varPi}\left( R_{i,m}+1 \right) -1 \right] 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord text mtight"><span class="mord cjk_fallback mtight">，</span></span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.416em;vertical-align:-0.966em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size3">[</span></span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.3089999999999997em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mrel mtight">∈</span><span class="minner mtight"><span class="mopen mtight delimcenter" style="top:0em;"><span class="mtight">{</span></span><span class="mord mathdefault mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mord mtight">1</span><span class="mpunct mtight">;</span><span class="mord mathdefault mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mclose mtight delimcenter" style="top:0em;"><span class="mtight">}</span></span></span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord"><span class="mord mathit">Π</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.966em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">m</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size3">]</span></span></span></span></span></span></span></p>
+<p>实证分析时要求11个月的衡量期内至少有9个月收益可获取，乘以100意为使用百分比形式表示。<br>
+<strong>剔除月份t数据的惯例做法是为了将中期动量效应和短期反转效应分离。</strong></p>
+<h3 id="衡量反转">衡量反转</h3>
+<p>短期反转的衡量方法其实在上文已经提到，股票在t月份的反转因子可以简单记为股票在月份t的收益<br>
+​                                                          									                                   	Rev<sub>i,t</sub> = 100R<sub>i,t</sub></p>
+<p>Rev<sub>i,t</sub>代表短期反转，R<sub>i,t</sub>代表股票i在月份t的收益，乘以100是为了以百分比形式表示</p>
+<ul>
+<li>在实证分析中也可能使用小于一个月的数据计算反转效应（比如一周）</li>
+</ul>
+<h3 id="动量和股票收益">动量和股票收益</h3>
+<p>使用股票的月度数据进行实证检验是比较简便且快速的方法，但由于聚宽不提供月度数据，在后文A股实证检验动量构建的方法为：调取t-12月到t-1月这11个月的个股<strong>日度（跳过停牌）数据，剔除少于180数据点</strong>的股票，采用最远时间收盘价（距t-12最近）和最近时间收盘价（距t-1最近）计算期间收益并转为百分比形式。</p>
+<h4 id="单变量组合分析">单变量组合分析</h4>
+<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1615296296646.png" alt="" loading="lazy"></figure>
+<p>根据<strong>传统动量</strong>进行单变量组合分析结果如上表所示，市值加权时各组的显著性低于等权重组合，与美股显著的动量效应不同，市值加权和等权重的高减低组合收益数值和显著性都不理想，各组之间也没有展现出单调性，而是呈现出倒U型。</p>
+<p>下面是Bali在进行动量单变量组合分析时得到结论（美股）：</p>
+<ul>
+<li>持有期相同时跳过最后一期构成组合动量的预测能力明显提高</li>
+<li>动量效应在高市值股票中较为显著，低市值股票中较弱（对于最低的5%可能会反转）</li>
+<li>月份t和月份t+1的收益在横截面存在强负相关关系，且在低市值股票上更为明显，反转效应更多</li>
+<li>预测未来k个月的收益：传统的动量Mom作为排序变量时，未来收益存在动量效应且持续10个月（FFα上考虑，尽管7个月后不再异于0），11个月和12个月后的收益却变为负且统计显著</li>
+<li>采用滞后时间计算法对于未来1个月的收益预测能力更强，且滞后时间计算动量没有被反转效应影响</li>
+</ul>
+<h4 id="双变量组合分析">双变量组合分析</h4>
+<p>动量效应在单变量组合分析的结果不令人满意，现在控制市值进行双变量独立组合分析，结果如表11.2所示：</p>
+<figure data-type="image" tabindex="2"><img src="https://dorianhung.github.io/post-images/1615296303274.png" alt="" loading="lazy"></figure>
+<p>动量效应仍然不明显，控制市值后各组的高见低组合收益均不显著，有些甚至为负，而反之控制动量后规模效应仍然显著。</p>
+<p>以上是对A股动量效应简单检验的结果，关于A股动量效应必然还有更加深入研究。但从上述结果，若简单以传统动量作为交易策略，无论是纯多头还是多空组合恐怕效果不佳</p>
+<h3 id="反转和股票收益">反转和股票收益</h3>
+<p>反转的计算方法已在上文提及，代码整体逻辑与动量类似，计算过去一个月的收益作为Rev。</p>
+<h4 id="单变量组合分析-2">单变量组合分析</h4>
+<p>首先进行单变量组合分析，以Rev为排序变量10分组，展示各组以及差异组合的超额收益时间序列均值：</p>
+<p><img src="https://dorianhung.github.io/post-images/1615296336633.png" alt="" loading="lazy"><br>
+相比于动量在A股不佳的表现，反转效应十分显著，特别是等权重组合，等权重计算的高减低组合经Newey West调整的t统计量超过了4，各组收益呈现出了不错的单调性，在过去一个月收益高的股票在未来一个月表现为更低的收益率。在Rev最高的几组（即过去一个月收益较高的股票）似乎是造成差异组合显著的主要原因，高Rev组的收益存在一个明显陡降。</p>
+<h4 id="双变量组合分析-2">双变量组合分析</h4>
+<p>按照惯例，控制市值继续检验反转效应，结果如下：</p>
+<figure data-type="image" tabindex="3"><img src="https://dorianhung.github.io/post-images/1615296342988.png" alt="" loading="lazy"></figure>
+<p>从表11.4的结果中，非常容易看出，控制市值后低MktCap股票的反转效应非常显著（可以说是目前检验到的最大t值），市值加权组合显著性稍弱一些，随着市值提高差异组合收益的显著性下降，MktCap4和MktCap5之间的差距较大，无论是调整T统计量还是超额收益的数值都有大幅下降，我们可以从中得到结论：<strong>反转在中低市值股票中表现最好</strong><br>
+考虑各Rev分组，和单变量组合分析类似，高见低组合的差异更像是高Rev造成的，Rev4和Rev5之间有一个明显的跳跃。<br>
+总之，控制市值后，反转效应仍然存在且高度显著，最高市值的股票反转效应稍弱一些。</p>
+<h3 id="动量因子mom与反转因子str">动量因子MOM与反转因子STR</h3>
+<p>下面是动量和反转因子的构造；</p>
+<ul>
+<li>
+<p>在资本资产定价实证研究中最常见的是月度动量因子，构建方法是：<br>
+首先按照最近的6月底的市值分成两组LS，随后再依据动量分成三组UMD，最后，用两个U组合未来1个月平均收益减去两个D组合未来1一个月平均收益。</p>
+</li>
+<li>
+<p>动量简称为UMD或MOM（大小写区分于股票动量Mom），同SMB,HML一样因子被设计为市值中性的0成本组合。</p>
+</li>
+<li>
+<p>反转因子的设计同动量因子相似，根据市值分两组后依据反转值分为三组，形成六个市值加权组合，用两个低反转组合未来一个月平均收益减去两个高反转组合未来一个月的平均收益，记为STR。</p>
+</li>
+<li>
+<p>尽管实证支持较强，反转因子的使用频率并不如前述的因子高</p>
+</li>
+</ul>
+<h3 id="fama-french和carhart四因子模型">Fama、French和Carhart四因子模型</h3>
+<ul>
+<li>Carhart（1997）将动量因子引入风险模型中，即FF三因子模型中加入动量因子MOM，它成为了文献中使用最为广泛的标准模型（简称FFC）：</li>
+</ul>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>r</mi><mrow><mi>p</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>α</mi><mi>p</mi></msub><mo>+</mo><msub><mi>β</mi><mrow><mi>M</mi><mi>k</mi><mi>t</mi><mo separator="true">,</mo><mi>p</mi></mrow></msub><mi>M</mi><mi>K</mi><msub><mi>T</mi><mi>t</mi></msub><mo>+</mo><msub><mi>β</mi><mrow><mi>S</mi><mi>M</mi><mi>B</mi><mo separator="true">,</mo><mi>p</mi></mrow></msub><mi>S</mi><mi>M</mi><msub><mi>B</mi><mi>t</mi></msub><mo>+</mo><msub><mi>β</mi><mrow><mi>H</mi><mi>M</mi><mi>L</mi><mo separator="true">,</mo><mi>p</mi></mrow></msub><mi>H</mi><mi>M</mi><mi>L</mi><mo>+</mo><msub><mi>β</mi><mrow><mi>M</mi><mi>O</mi><mi>M</mi><mo separator="true">,</mo><mi>p</mi></mrow></msub><mi>M</mi><mi>O</mi><msub><mi>M</mi><mi>t</mi></msub><mo>+</mo><msub><mi>ε</mi><mrow><mi>p</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">r_{p,t}=\alpha _p+\beta _{Mkt,p}MKT_t+\beta _{SMB,p}SMB_t+\beta _{HML,p}HML+\beta _{MOM,p}MOM_t+\varepsilon _{p,t}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">p</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8694379999999999em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mord mathdefault mtight">t</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.328331em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.05017em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.328331em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span><span class="mord mathdefault mtight">L</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.08125em;">H</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">L</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.328331em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">O</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">p</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.10903em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">ε</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">p</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
 ]]></content>
     </entry>
     <entry>
@@ -172,55 +232,57 @@ FF5['2000':'2020']['HML'].plot()
 </li>
 </ul>
 <h2 id="规模和股票收益">规模和股票收益</h2>
+<p>接下来在A股实证检验规模效应，在上一章的基础上，本章进行了双变量独立组合分析，另一个排序变量为贝塔，在FM回归中也将贝塔放入了等式右边。<br>
+JoinQuant通过如下代码获取流通市值，在权重计算时使用的同样是此流通市值。</p>
+<pre><code>get_fundamentals(query(valuation).filter(
+      valuation.code.in_(stkdf['code'].tolist())), date=time_now
+                      )[['code','circulating_market_cap']]   
+</code></pre>
+<p>在计算断点方面，Bali提到了来自NYSE交易所的股票市值平均比其他交易所大，如果采用全市场计算断点则会有效分离NASDAQ,NYSE,AMEX的股票（因此他选用NYSE股票计算断点）；在下文的A股检验中，断点由股票池（即剔除了ST，次新股的全A股）计算。</p>
 <h3 id="1-单变量组合分析">1、单变量组合分析</h3>
+<p>表9.1为单变量组合分析的结果，每月形成10个分位组合，流通市值作为排序变量，毫无疑问各组市值是高度偏态的，第10十分位市值在时间序列上的均值约为第9十分位组的3倍，最大组约的平均市值是其余各组均值之和的两倍（描述性统计结果未贴出）</p>
+<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1615042831890.png" alt="" loading="lazy"></figure>
+<p>表中结果显示，做多高市值股票做空低市值股票的差异组合无论是采用市值加权，还是等权重都产生了显著的负平均收益率；<br>
+值得注意的是，在采用市值加权计算收益时，市值不仅作为排序变量，也作为权重，市值加权组10-1组合的显著性和收益均低于等权重组合；<br>
+通过观察1~10分位组合，A股市场和美股市场展现出了类似的结果：收益随着市值上升而递减，最低市值的股票具有最高的超额收益，且显著性强；再考虑到市值加权和等权重表现的上述差别，<strong>市值和股票未来收益之间的横截面关系似乎是由样本中市值最低的股票的高超额收益驱动的。</strong></p>
 <ul>
-<li>在计算断点时，书中采用纽交所(NYSE)上市的股票进行计算，而非CRSP，这是因为NYSE市值要比AMEX或NASDAQ上市的股票市值高得多（如果采用CRSP计算则会有效分离NASDAQ,NYSE,AMEX的股票）;</li>
-</ul>
-<p>表9.1中为A股最近十年单变量组合分析的结果，其中断点由全部A股（剔除上市不满一年股票）计算，每个月形成了10个分位组合，流通市值作为排序变量。特别地，第10十分位市值的均值超过了各组均值之和的一半。</p>
-<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1613556845720.png" alt="" loading="lazy"></figure>
-<p>结果显示，做多高市值股票做空低市值股票的差异组合无论是采用市值加权，还是等权重都产生了在经济上较大的平均收益率，且具有一定的统计学意义。<br>
-值得注意的是，在采用市值加权计算收益时，市值不仅作为排序变量，也作为权重，差异组合的显著性和收益均低于等权重组合。<br>
-通过观察1~10分位组合，A股市场和美股市场展现出了类似的结果：各组超额收益呈现了一定的单调性，具有最低市值具有最高的超额收益且显著性更强，<strong>市值和股票未来收益之间的横截面关系似乎是由样本中市值最低的股票的高超额收益驱动的。</strong></p>
-<ul>
-<li>如果规模效应是由极小市值的一部分股票驱动，这些股票可能存在流动性不足的问题从而使得旨在捕捉基于规模的策略实施相当困难。</li>
+<li>如果规模效应是由极小市值的一部分股票驱动，这些股票可能存在流动性不足的问题，从而使得旨在捕捉基于规模的策略实施相当困难。</li>
 </ul>
 <h3 id="2-双变量组合分析">2、双变量组合分析</h3>
-<p>现在我用双变量组合继续检验规模和收益之间的关系，引入变量贝塔，观察控制市场贝塔后市值和股票收益的关系，根据贝塔和市值把股票各独立分成5组，一共形成25个组合。<br>
-理论上，高贝塔股票应该具有高的期望收益，考虑到市值低的股票常常具有低贝塔值，所以没有理论可以期望β能解释极低市值的股票会有高收益这一现象。然而在上一章中，我们发现了β和未来收益的负向关系，这一结论表明控制β也许能解释规模效应。</p>
-<p><img src="https://dorianhung.github.io/post-images/1613556851112.png" alt="" loading="lazy"><br>
-表9.2呈现双变量独立组合分析的结果，无论是等权重还是市值加权，规模效应只存在于β最低的五分位数组中。</p>
-<p>双变量得出了和单变量组合分析相似的结论，等权重产生的结果比市值加权产生的效果更强，在双变量组合分析中控制贝塔后，仅有低贝塔组合检测出了统计上显著的规模效应，市值和股票期望收益之间的负相关关系强度很大程度上取决于分析方法。</p>
+<p>现在用双变量组合继续检验规模和收益之间的关系，引入变量贝塔，观察控制市场贝塔后市值和股票收益的关系，根据贝塔和市值把股票各独立分成5组，一共形成25个组合。<br>
+理论上，高贝塔股票应该具有高的期望收益，考虑到市值低的股票常常具有低贝塔值，所以没有理论可以期望β能解释极低市值的股票会有高收益这一现象。然而在上一章中，我们发现了β和未来收益的负向关系，那么也许控制β能解释规模效应？检验结果如下表所示：</p>
+<figure data-type="image" tabindex="2"><img src="https://dorianhung.github.io/post-images/1615042841638.png" alt="" loading="lazy"></figure>
+<p>贝塔的各分组中均发现了规模效应，无论是采用市值加权还是等权重，从差异组合的t统计量可以得知等权重产生的规模效应更强；另外，对于市值的各分组中，和上一章一样同样没有发现高贝塔会带来更高的收益。</p>
+<p>P.S.在Bali的例中，采用<strong>NYSE计算断点</strong>和采用<strong>全市场计算断点</strong>的双变量组合分析结果有差异，NYSE计算断点时只在贝塔最低组中检测出了显著规模效应（由此得出结论规模效应集中在低市场贝塔的股票中），采用全市场时规模效应在各组的收益率和显著性明显提升，但低贝塔组的MktCap5-1收益率t值仍比其他组更高</p>
 <p>###3、Fama和MacBeth回归分析<br>
 现在我们用FM回归来检验规模效应，每个月用规模或规模与贝塔对未来1个月的股票平均超额收益进行横截面回归。在进行回归时为了避免极端的市值造成影响采用Size（流通市值取对数）作为解释变量。<br>
 表9.3呈现了FM回归分析的结果</p>
-<figure data-type="image" tabindex="2"><img src="https://dorianhung.github.io/post-images/1613556912359.png" alt="" loading="lazy"></figure>
-<p>列（1）显示，Size为唯一自变量时，截面回归月平均斜率为-0.52，Newey West调整T统计量为-2.34，表明Size和股票未来收益之间存在统计上显著的负相关关系。<br>
-列（2）显示，控制β影响后，Size的平均斜率为-0.49，Newey West调整T统计量为-2.31，规模和股票未来收益之间负横截面关系仍然存在，β调整T统计量为-1.78，在统计上勉强显著。</p>
-<p>接下来检测列1在经济上的显著性，通过describe()函数得到回归自变量的描述性统计，如下表所示。<br>
-<img src="https://dorianhung.github.io/post-images/1613566085343.png" alt="" loading="lazy"><br>
-<img src="https://dorianhung.github.io/post-images/1613566822520.png" alt="" loading="lazy"><br>
-注：超额收益没有采用百分形式</p>
-<p>将包含控制变量β的回归方程式中Size的平均斜率系数-0.49乘以标准差2得到-0.98，这表明其他条件相同时，Size的一个标准差偏差与每月0.98%的股票期望收益差额相关，这在经济上也是十分重要的。</p>
+<figure data-type="image" tabindex="3"><img src="https://dorianhung.github.io/post-images/1615042853100.png" alt="" loading="lazy"></figure>
+<p>列（1）显示，Size为唯一自变量时，截面回归月平均斜率为-0.42，Newey West调整T统计量为-2.60，表明Size和股票未来收益之间存在统计上显著的负相关关系。<br>
+列（2）显示，控制β影响后，Size的平均斜率为-0.45，Newey West调整T统计量为-3.05，规模和股票未来收益之间负横截面关系仍然存在，β平均斜率为-0.13，调整T统计量为0.11。</p>
+<p>检测列2在经济上的显著性，通过describe()函数得到回归自变量的描述性统计，如下表所示。</p>
+<figure data-type="image" tabindex="4"><img src="https://dorianhung.github.io/post-images/1615042968758.png" alt="" loading="lazy"></figure>
+<p>将包含控制变量β的回归方程式中Size的平均斜率系数-0.45乘以标准差2.17得到-0.97，这表明其他条件相同时，Size的一个标准差偏差带来每月0.98%的股票期望收益差额，数值具有经济意义，此外还可以用75分位和25分位的差额乘以平均斜率系数，结果显然在经济上是有的。</p>
 <p><strong>总结：</strong></p>
 <ul>
-<li>采用市值加权计算收益产生的规模效应比等权重弱一些；</li>
-<li>规模效应由市值最低十分位数组合中的股票的极大收益驱动，规模效应集中在低市场贝塔的股票中；</li>
-<li>组合收益和FM回归分析都检测出了规模和未来收益的显著的负相关关系，控制了β之后二者关系依然存在，它和CAPM的预测矛盾（市值可能作为暴露于不包括在基准资产定价模型CAPM的风险的代理）</li>
+<li>市值和股票期望收益之间的负相关关系很大程度上取决于分析使用方法，如采用市值加权计算/等权重计算，计算断点的方式也会产生影响；</li>
+<li>规模效应由市值最低十分位数组合中的股票的极大收益驱动；</li>
+<li>组合收益和FM回归分析都检测出了规模和未来收益的显著的负相关关系，控制了β之后二者关系依然存在，它和CAPM的预测矛盾（可能的解释：市值可能作为暴露于<strong>不包括在基准资产定价模型CAPM的风险的代理</strong>或市场无效）</li>
 </ul>
 <h2 id="规模因子">规模因子</h2>
 <p>考虑到市值是股票暴露在一个可定价但以前未定义的风险因素，Fama和French创建了一个0成本多空组合SMB，<strong>旨在产生一个收益近似于与该位置规模因子一个单位风险相关联的收益，且对其他因子敏感性很小</strong></p>
 <ul>
 <li>
-<p>在y年6月，根据所有股票市值【中值】分成S组和B组；</p>
+<p>在y年6月，根据所有股票市值中值分成S组和B组；</p>
 </li>
 <li>
-<p>在y年6月，根据账面市值比（BM）【独立】分为三组，BM等于y-1年的财年年底普通股账面价值除以y-1年12月底的股票市值，H组包含BM高于70百分位数的股票，M组包含30，70百分位数之间的股票，L组包含低于30百分位的股票</p>
+<p>在y年6月，根据账面市值比（BM）独立分为三组，BM等于y-1年的财年年底普通股账面价值除以y-1年12月底的股票市值，H组包含BM高于70百分位数的股票，M组包含30，70百分位数之间的股票，L组包含低于30百分位的股票</p>
 </li>
 <li>
-<p>这两个市值组和三个账面市值比交集形成6个组合，六个组合中每个组合中股票市值加权（y年6月底计算），计算6个组合y年7月到y+1年6月的月收益率，其中每个月都会重新构造组合</p>
+<p>两个市值组和三个BM组形成6个组合，六个组合中每个组合中股票市值加权（y年6月底计算），计算6个组合y年7月到y+1年6月的月收益率，其中每个月都会重新构造组合</p>
 </li>
 <li>
-<p><strong>模拟规模因子的组合（SMB）在任一月m的收益等于：三个低市值组合（S/H，S/M，S/L）的收益【简单平均值】减去三个高市值股票（B/H，B/M，B/L）组合收益的【简单平均值】，该组合设计的目的是创建一个多空组合，其收益率对高市值股票和低市值股票之间的收益差异非常敏感，并且对高和低账面市值比股票之间的收益率差异相对不敏感</strong></p>
+<p><strong>模拟规模因子的组合（SMB）在任一月m的收益等于：三个低市值组合（S/H，S/M，S/L）的收益简单平均值减去三个高市值股票（B/H，B/M，B/L）组合收益的简单平均值，该组合设计的目的是创建一个多空组合，其收益率对高市值股票和低市值股票之间的收益差异非常敏感，并且对高和低账面市值比股票之间的收益率差异相对不敏感</strong></p>
 </li>
 </ul>
 ]]></content>
@@ -231,8 +293,7 @@ FF5['2000':'2020']['HML'].plot()
         <link href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-er-bei-ta/">
         </link>
         <updated>2021-02-12T14:17:53.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="第八章-贝塔">第八章 贝塔</h1>
-<p>根据CAPM，任一证券的期望收益率等于无风险证券收益加上证券市场β乘以市场风险溢价。用数学表示CAPM为：</p>
+        <content type="html"><![CDATA[<p>根据CAPM，任一证券的期望收益率等于无风险证券收益加上证券市场β乘以市场风险溢价。用数学表示CAPM为：</p>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mrow><mo fence="true">[</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">]</mo></mrow><mo>=</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mrow><mo fence="true">(</mo><mi>E</mi><mrow><mo fence="true">[</mo><msub><mi>R</mi><mrow><mi>m</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">]</mo></mrow><mo>−</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">E\left[ R_{i,t} \right] =R_{i,t}+\beta _i\left( E\left[ R_{m,t} \right] -R_{i,t} \right) 
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">[</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">]</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">[</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">]</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
 <p>这里证券β等于：</p>
@@ -251,19 +312,21 @@ FF5['2000':'2020']['HML'].plot()
 <p>估计市场β可以采用不同的数据频率和周期，常用的方法是<strong>一年的日度超额收益</strong>估计上式（t-11到t共<strong>12个月</strong>日度数据），这种情况下至少需要200个数据点。如果采用月度数据，常用过去5年的月度超额收益。</p>
 </li>
 <li>
-<p>测量周期变长，贝塔估计值的标准差变小（异常值影响变小），意味着可能接近贝塔的真实值；此外，更多的数据点导致样本偏向更大更成熟的公司；最后，较长周期测量测量间的相关系数更大（短周期噪声更大）</p>
+<p>Bali的实证结论：测量周期变长，贝塔估计值的标准差变小（异常值影响变小），意味着可能接近贝塔的真实值；此外，更多的数据点导致样本偏向更大更成熟的公司；最后，较长周期测量测量间的相关系数更大（短周期噪声更大）</p>
 </li>
 </ul>
 <h2 id="贝塔和股票收益">贝塔和股票收益</h2>
-<p>根据CAPM的预测，市场贝塔和股票期望收益之间存在正相关关系，且这个斜率表示市场风险溢价。而在Bali书中对美股的实证检验中没有得出上述结论——组合分析，回归分析都<strong>没有</strong>检测到贝塔和未来收益的显著关系，那么对于A股情况如何呢？接下来为A股对贝塔的实证检验：</p>
+<p>根据CAPM的预测，市场贝塔和股票期望收益之间存在正相关关系，且这个斜率表示市场风险溢价。而在Bali书中对美股的实证检验中没有得出上述结论——组合分析，回归分析都<strong>没有</strong>检测到贝塔和未来收益的显著关系，那么对于A股情况如何呢？接下来为A股对贝塔的实证检验。<br>
+计算贝塔的步骤与上述过程大体一致，月度和日度MKT和无风险利率的数据取自factorwar.com，使用过去一年的日度收益对MKT回归；从实践过程发现，若用至少200个数据点的要求计算贝塔会导致较多的缺失值，因此条件放宽至<strong>至少165个数据点</strong>。<br>
+此外，在本章的实证检验中仅采用贝塔作为排序或回归变量，这是因为贝塔在后续章节中将继续登场，为了避免重复而没有引入其他变量。</p>
 <h3 id="1组合分析">1.组合分析</h3>
 <p>以贝塔为排序变量研究单变量排序组合，结果如表8.1所示<br>
 <img src="https://dorianhung.github.io/post-images/1613637269014.png" alt="" loading="lazy"></p>
-<p>结果表明，无论以市值加权或等权重计算收益，所有十分位上都没有呈现出明显的单调性，但平均收益最低的总是第10分位组合（与CAPM矛盾）；高减低组合的平均收益率均为负数；采用市值加权计算时，贝塔和股票收益负向关系更弱（表现在高减低组合的平均收益率绝对值更低，显著性更低）；以上结论与Bali的美股实证几乎一致，我们没有发现贝塔和期望收益的正相关关系，而是恰恰相反。</p>
+<p>结果表明，无论以市值加权或等权重计算收益，所有十分位上都<strong>没有</strong>呈现出明显的单调性，但平均收益最低的总是第10分位组合（与CAPM矛盾），市值加权和等权重计算的高减低组合平均收益率为负数；采用等权重计算时，贝塔和股票收益负向关系更弱（表现在高减低组合的平均收益率绝对值更低，显著性更低）；总之，在A股的实证检验得出的结论与Bali在美股相似，<strong>贝塔和期望收益的正相关关系没有被发现（反而存在一定的负相关）。</strong></p>
 <h3 id="2fm回归">2.FM回归</h3>
-<p>接下来采用FM回归分析研究贝塔和股票收益关系，每个月对每种贝塔进行测量，用未来一个月股票超额收益对贝塔横截面回归，结果由pandas库describe()方法导出，如表8.2所示：<br>
-<img src="https://dorianhung.github.io/post-images/1613637275533.png" alt="" loading="lazy"></p>
-<p>结果表明，贝塔的平均系数为负数（Newey West调整T统计量为-1.98，在5%水平下显著），与CAPM的预测矛盾，此外回归得到截距系数非常大，与CAPM的第二个预测即零贝塔证券期望超额收益为零矛盾；考虑经济意义，用平均斜率系数-1.02乘以标准差5.10得到-5.20，β每增加一个标准差期望收益每月减少5.20%，数值经济上有意义。</p>
+<p>接下来采用FM回归分析研究贝塔和股票收益关系，每个月对每种贝塔进行测量，用未来一个月股票超额收益对贝塔横截面回归，回归得到系数时间序列，通过describe()函数进行描述性统计，最后整理导出如表8.2所示：</p>
+<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1614941640822.png" alt="" loading="lazy"></figure>
+<p>贝塔的平均系数为负数经Newey West调整T统计量为-0.11，与CAPM矛盾，此外回归得到截距系数非常大，且在统计上显著，与CAPM的第二个预测，即零贝塔证券期望超额收益为零相矛盾；考虑其经济意义，用平均斜率系数-1.02乘以标准差5.10得到-5.20，β每增加一个标准差期望收益每月减少5.20%，数值经济上有意义。</p>
 <p>与CAPM矛盾的实证检测结果是最持久且最被广泛研究的异象，对此Bali在书中提到的解释有：</p>
 <ul>
 <li>机构投资者基准行为引起（Baker、Bradley和Wurgler 2011）</li>
@@ -551,42 +614,6 @@ X的大小不易理解时，可以采取以下方法：</p>
 <li>CAPM是考虑了组合或证券对市场组合的风险暴露后，被用来计算一个组合或者证券的平均异常收益的模型</li>
 <li>异常收益也称为α，如果α统计上异于0表明组合产生非0超额收益并非由对市场组合的敏感所致</li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://dorianhung.github.io/post/hello-gridea/</id>
-        <link href="https://dorianhung.github.io/post/hello-gridea/">
-        </link>
-        <updated>2018-12-11T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi><mi>e</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">test
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span></span></span></span></span></p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">啊</mi><mi mathvariant="normal">啊</mi><mi mathvariant="normal">啊</mi></mrow><annotation encoding="application/x-tex">啊啊啊
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">啊</span><span class="mord cjk_fallback">啊</span><span class="mord cjk_fallback">啊</span></span></span></span></span></p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
