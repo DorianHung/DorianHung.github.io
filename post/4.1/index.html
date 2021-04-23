@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>实证资产定价(二)贝塔 | Dorain&#39;s Blog</title>
+<title>因子投资与实践--多因子模型 | Dorain&#39;s Blog</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1619175409020">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -32,7 +32,7 @@
 
 
 
-  <meta name="description" content="实证资产定价(二)贝塔" />
+  <meta name="description" content="因子投资与实践--多因子模型" />
   <meta name="keywords" content="" />
 </head>
 
@@ -224,11 +224,20 @@
     <ul class="markdownIt-TOC">
 <li>
 <ul>
-<li><a href="#%E4%BC%B0%E8%AE%A1%E8%B4%9D%E5%A1%94">估计贝塔</a></li>
-<li><a href="#%E8%B4%9D%E5%A1%94%E5%92%8C%E8%82%A1%E7%A5%A8%E6%94%B6%E7%9B%8A">贝塔和股票收益</a>
+<li>
 <ul>
-<li><a href="#1%E7%BB%84%E5%90%88%E5%88%86%E6%9E%90">1.组合分析</a></li>
-<li><a href="#2fm%E5%9B%9E%E5%BD%92">2.FM回归</a></li>
+<li><a href="#41-%E4%B8%BB%E6%B5%81%E6%A8%A1%E5%9E%8B%E7%BB%BC%E8%BF%B0">4.1 主流模型综述</a><br>
+*
+<ul>
+<li><a href="#1-fama-french-%E4%B8%89%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">1、Fama-French 三因子模型</a></li>
+<li><a href="#2-carhart-%E5%9B%9B%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">2、Carhart 四因子模型</a></li>
+<li><a href="#3-novy-marx-%E5%9B%9B%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">3、Novy-Marx 四因子模型</a></li>
+<li><a href="#4-fama-french-%E4%BA%94%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">4、Fama-French 五因子模型</a></li>
+<li><a href="#5-hou-xue-zhang%E5%9B%9B%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">5、Hou-Xue-Zhang四因子模型</a></li>
+<li><a href="#6-stambaugh-yuan-%E5%9B%9B%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">6、Stambaugh-Yuan 四因子模型</a></li>
+<li><a href="#7-daniel-hirshleifer-sun-%E4%B8%89%E5%9B%A0%E5%AD%90%E6%A8%A1%E5%9E%8B">7、Daniel-Hirshleifer-Sun 三因子模型</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -498,8 +507,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-er-bei-ta/">
-      实证资产定价(二)贝塔
+    <a class="post-title-link" href="https://dorianhung.github.io/post/4.1/">
+      因子投资与实践--多因子模型
     </a>
   </h1>
   <div class="post-meta">
@@ -507,62 +516,139 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2021-02-12</span>
+      <span>2021-04-23</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>5分钟</span>
+      <span>9分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>1329<span class="pc-show">字数</span></span>
+      <span>2474<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p>根据CAPM，任一证券的期望收益率等于无风险证券收益加上证券市场β乘以市场风险溢价。用数学表示CAPM为：</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mrow><mo fence="true">[</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">]</mo></mrow><mo>=</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mrow><mo fence="true">(</mo><mi>E</mi><mrow><mo fence="true">[</mo><msub><mi>R</mi><mrow><mi>m</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">]</mo></mrow><mo>−</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">E\left[ R_{i,t} \right] =R_{i,t}+\beta _i\left( E\left[ R_{m,t} \right] -R_{i,t} \right)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">[</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">]</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.969438em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">[</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">]</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span></span></p>
-<p>这里证券β等于：</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>β</mi><mi>i</mi></msub><mo>=</mo><mfrac><mrow><mi>C</mi><mi>o</mi><mi>v</mi><mrow><mo fence="true">(</mo><msub><mi>R</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo separator="true">,</mo><msub><mi>R</mi><mrow><mi>m</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">)</mo></mrow></mrow><mrow><mi>V</mi><mi>a</mi><mi>r</mi><mrow><mo fence="true">(</mo><msub><mi>R</mi><mrow><mi>m</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo fence="true">)</mo></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">\beta _i=\frac{Cov\left( R_{i,t},R_{m,t} \right)}{Var\left( R_{m,t} \right)}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.399108em;vertical-align:-0.972108em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.28055599999999997em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.972108em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-<p>证券收益和市场收益的协方差除以市场收益的方差</p>
-<h2 id="估计贝塔">估计贝塔</h2>
+              <blockquote>
+<p>模型总加入越来越多因子后，总能更好解释资产，异象的收益率<br>
+优秀的多因子模型应该包含少量，有限个因子，且具有明确的金融学，经济学含义</p>
+</blockquote>
+<h3 id="41-主流模型综述">4.1 主流模型综述</h3>
+<h5 id="1-fama-french-三因子模型">1、Fama-French 三因子模型</h5>
+<p>市场+规模+价值</p>
+<p>采用BM（3组）和市值（2组）独立双重排序，构建规模和价值因子</p>
+<p>双重排序→组合加权收益率→高减低组合取等权平均构建因子</p>
+<p>解释：财务困境</p>
+<h5 id="2-carhart-四因子模型">2、Carhart 四因子模型</h5>
+<p>市场+规模+价值+动量（动量单变量排序，等权重多空）</p>
+<p>在FF3基础上加上了显著的异象：截面动量</p>
+<h5 id="3-novy-marx-四因子模型">3、Novy-Marx 四因子模型</h5>
+<p>市场+价值+动量（动量市值中性）+盈利PMU</p>
+<p>盈利和未来预期收益密切相关，毛利率代表最真实的经济生产能力，是企业所有投入者债权人+股东努力的结果，其次毛利润包含了研发投入和广告投入等，有利于未来盈利不应该被减去，最后毛利润受到会计操作较少。</p>
+<p>行业中性处理：做多股票时同时等权重地做空股票所属行业指数</p>
+<p>各个因子的计算都是和市值进行2x3独立排序，（这个模型不含规模因子，含规模因子的构建方法见下文）</p>
+<h5 id="4-fama-french-五因子模型">4、Fama-French 五因子模型</h5>
+<p>市场+规模+价值+盈利+投资</p>
+<p>模型从DDM出发并利用MM的结果推导出了t时刻公司市值满足：</p>
+<p class='katex-block katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \infty at position 55: …u =1}^{\textit{\̲i̲n̲f̲t̲y̲ ̲}}E\left[ Y_{t+…'>\frac{M_t}{B_t}\ =\frac{\varSigma _{\tau =1}^{\textit{\infty }}E\left[ Y_{t+\tau}-dB_{t+\tau} \right] /\left( 1+r \right) ^{\tau}}{B_t}
+</p>
+<p>M为市值，B为账面价值，r为股票预期收益率，Y为净利润，dB<sub>t+r</sub>是未来账面价值的变化</p>
+<p>由此得出关系：</p>
+<p>除了M和r其他变量不变时，更小的M对应更高的r</p>
+<p>除了Y和r其他变量不变时，更高的Y对应更高的r</p>
+<p>除了dB和r其他变量不变时，更高的dB对应更低的r</p>
+<p>即：r和预期盈利Y正相关，和预期投资B负相关</p>
+<p>由此构建盈利因子RMW和投资因子CMA：预期盈利采用历史ROE，投资采用<strong>总资产的变化</strong>（按上述模型应该是账面价值的预期变化，但采用总资产变化在截面上的差异更大）</p>
+<p>将各个因子和市值双重排序构建因子，得到2x3x3个分组，这样可以得到3个SMB，取均值得到最后的SMB因子</p>
+<h5 id="5-hou-xue-zhang四因子模型">5、Hou-Xue-Zhang四因子模型</h5>
+<p>市场+规模+盈利+投资</p>
+<p><strong>从实体投资经济学出发，也被称为q-因子模型</strong></p>
+<p>净现值原则：一家公司应该持续投资，知道投资的边际效益等于边际成本</p>
+<p>将净现值原则变化得出：折现率 = 盈利率 / 投资成本</p>
 <ul>
 <li>
-<p>估计贝塔的方法有不同种，都基于超额收益对市场组合超额收益的回归展开，最常用的方法是运行一个CAPM回归，这个回归也称作单因子市场模型回归</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>r</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>α</mi><mi>i</mi></msub><mo>+</mo><msub><mi>β</mi><mi>i</mi></msub><mi>M</mi><mi>K</mi><mi>T</mi><mo>+</mo><msub><mi>ε</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>t</mi></mrow></msub></mrow><annotation encoding="application/x-tex">r_{i,t}=\alpha _i+\beta _iMKT+\varepsilon _{i,t}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.73333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.0037em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.05278em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault">ε</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathdefault mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span></p>
-<p>其中r是股票i在时段t内的<strong>超额收益</strong>，MKT是市场组合(市场因子)在时段t内的超额收益，ε是回归残差。如果α为0，两边取期望则得到CAPM，股票市场β则可以看作回归结果中斜率系数的估计值</p>
+<p>当盈利率给定时，投资越多边际成本越高，折现率越低（预期收益低）</p>
 </li>
 <li>
-<p>估计市场β可以采用不同的数据频率和周期，常用的方法是<strong>一年的日度超额收益</strong>估计上式（t-11到t共<strong>12个月</strong>日度数据），这种情况下至少需要200个数据点。如果采用月度数据，常用过去5年的月度超额收益。</p>
+<p>当投资给定时，盈利率越高的公司折现率越高（预期收益高）</p>
 </li>
 <li>
-<p>Bali的实证结论：测量周期变长，贝塔估计值的标准差变小（异常值影响变小），意味着可能接近贝塔的真实值；此外，更多的数据点导致样本偏向更大更成熟的公司；最后，较长周期测量测量间的相关系数更大（短周期噪声更大）</p>
+<p>即：收益率和投资反比，和盈利率正比</p>
 </li>
 </ul>
-<h2 id="贝塔和股票收益">贝塔和股票收益</h2>
-<p>根据CAPM的预测，市场贝塔和股票期望收益之间存在正相关关系，且这个斜率表示市场风险溢价。而在Bali书中对美股的实证检验中没有得出上述结论——组合分析，回归分析都<strong>没有</strong>检测到贝塔和未来收益的显著关系，那么对于A股情况如何呢？接下来为A股对贝塔的实证检验。<br>
-计算贝塔的步骤与上述过程大体一致，月度和日度MKT和无风险利率的数据取自factorwar.com，使用过去一年的日度收益对MKT回归；从实践过程发现，若用至少200个数据点的要求计算贝塔会导致较多的缺失值，因此条件放宽至<strong>至少165个数据点</strong>。<br>
-此外，在本章的实证检验中仅采用贝塔作为排序或回归变量，这是因为贝塔在后续章节中将继续登场，为了避免重复而没有引入其他变量。</p>
-<h3 id="1组合分析">1.组合分析</h3>
-<p>以贝塔为排序变量研究单变量排序组合，结果如表8.1所示<br>
-<img src="https://dorianhung.github.io/post-images/1613637269014.png" alt="" loading="lazy"></p>
-<p>结果表明，无论以市值加权或等权重计算收益，所有十分位上都<strong>没有</strong>呈现出明显的单调性，但平均收益最低的总是第10分位组合（与CAPM矛盾），市值加权和等权重计算的高减低组合平均收益率为负数；采用等权重计算时，贝塔和股票收益负向关系更弱（表现在高减低组合的平均收益率绝对值更低，显著性更低）；总之，在A股的实证检验得出的结论与Bali在美股相似，<strong>贝塔和期望收益的正相关关系没有被发现（反而存在一定的负相关）。</strong></p>
-<h3 id="2fm回归">2.FM回归</h3>
-<p>接下来采用FM回归分析研究贝塔和股票收益关系，每个月对每种贝塔进行测量，用未来一个月股票超额收益对贝塔横截面回归，回归得到系数时间序列，通过describe()函数进行描述性统计，最后整理导出如表8.2所示：</p>
-<figure data-type="image" tabindex="1"><img src="https://dorianhung.github.io/post-images/1614941640822.png" alt="" loading="lazy"></figure>
-<p>贝塔的平均系数为负数经Newey West调整T统计量为-0.11，与CAPM矛盾，此外回归得到截距系数非常大，且在统计上显著，与CAPM的第二个预测，即零贝塔证券期望超额收益为零相矛盾；考虑其经济意义，用平均斜率系数-1.02乘以标准差5.10得到-5.20，β每增加一个标准差期望收益每月减少5.20%，数值经济上有意义。</p>
-<p>与CAPM矛盾的实证检测结果是最持久且最被广泛研究的异象，对此Bali在书中提到的解释有：</p>
+<p>在实证研究中，Hou使用<strong>ROE和总资产变化率作为盈利和投资的指标</strong>（构建因子时采用市值，单季度ROE，总资产变化率进行2x3x3独立三重排序）</p>
+<h5 id="6-stambaugh-yuan-四因子模型">6、Stambaugh-Yuan 四因子模型</h5>
+<p>市场+规模+管理+表现</p>
+<p>最后两个多因子模型是从行为金融学角度对资产定价的探索。行为金融学认为认知偏差造成了市场中各种错误定价，而错误定价可以解释市场中许多异象和因子。</p>
+<p>模型因子月度再平衡，管理和表现均源于错误定价的研究，错误定价意味着价格较内在价值的偏离：当价格高于内在价值时资产被高估，价格低于内在价值时，资产被低估。<strong>被高估的资产由于价格的修正在未来会出现较低的收益率，反之被低估的资产则在未来会获得较高的收益率————那么需要寻找衡量高估和低估的指标</strong></p>
+<p>Yuan等以FF-3因子无法解释的异象为基础，构建了错误定价指标（异象的超额收益反映了投资组合内股票的收益无法被FF3解释，即个股的错误定价），<strong>异象的取值高低就可以用来描述错误定价的方向和大小</strong></p>
+<blockquote>
+<p>11个异象为：（注 异象的名称并不完全等价于计算方法，括号为为变量和预期收益率的关系）</p>
+<p>1股票净发行量 （负相关）</p>
+<p>2复合股权发行量（负相关）</p>
+<p>3应计利润（负相关）</p>
+<p>4经营业资产（负相关）</p>
+<p>5总资产增长率（负相关）</p>
+<p>6投资和总资产之比（负相关）</p>
+<p>7财务困境（负相关）</p>
+<p>8O-分数（负相关）</p>
+<p>9动量（正相关）</p>
+<p>10毛利润Gross Profitability（正相关）</p>
+<p>11总资产回报率（正相关）</p>
+</blockquote>
+<p>根据异象的相关性将11个异象分为两组：</p>
 <ul>
-<li>机构投资者基准行为引起（Baker、Bradley和Wurgler 2011）</li>
-<li>受杠杆约束投资者会买多高β股票以增加组合期望收益，结果是高贝塔股票价格升高从而降低期望收益（Frazzini和Pedersen 2014）</li>
-<li>投资者对博彩型股票的需求，这些股票恰好是高贝塔股票，结果使高贝塔股票价格升高从而降低期望收益（Bali、Brown、Murray和Tang 2014）</li>
+<li>
+<p>第一组为前6个（到投资和总资产之比），和上市公司的管理决策有关，使用它们构建的因子叫管理因子。</p>
+</li>
+<li>
+<p>第二组为后5个，他们和上市公司的表现有关，构建为表现因子</p>
+</li>
+</ul>
+<p>构建方法：使用异象变量进行横截面排序，被高估的排在前面，低估排在后面（预期收益率低的排在前面）</p>
+<p>排序完成后，每个股票拥有11个分数，分别把管理和表现的排名取平均，得到每只股票在两组的2个综合排名</p>
+<p><strong>股票的排名高则被高估（预期收益低），综合排名低则股票被低估（预期收益高）</strong></p>
+<p>得到两个变量上的排名后，按照惯例使用市值2x3双重排序构建因子（值得注意的是三分组时Stambaugh and Yuan采用的断点是20,80），市值加权计算6组收益，做空高估做多低估得到MGMT管理，PERF表现因子</p>
+<p><strong>在SMB的计算上，采用方法为【小市值&amp;中管理/表现】-【大市值&amp;中管理/表现】，再取平均；即舍去了管理和表现的2个高组和2个低组，解释为：由于套利的不对称导致高估的股票错误定价难以消除，此外小市值股票错误定价更为突出，采用传统方法无法在规模因子多空两头对称消除错误定价影响造成规模因子被高估的偏差</strong></p>
+<p>他们的实证表明，采用此法构建的SMB具有更高的风险溢价</p>
+<h5 id="7-daniel-hirshleifer-sun-三因子模型">7、Daniel-Hirshleifer-Sun 三因子模型</h5>
+<p>市场+长周期行为+短周期行为</p>
+<p>从长短两个时间尺度上提出两个行为因子，和市场因子一起构成了一个复合三因子模型</p>
+<p>这两个因子旨在捕捉过度自信和有限注意力造成的错误定价从而解释学术界之前发现的大量选股异象，行为金融学的角度认为股票共同运动通常的原因有：</p>
+<ul>
+<li>股票定价上的共性</li>
+<li>投资者对股票基本面信息的错误反应上的共性</li>
+</ul>
+<p>前者指出不同的股票实际上暴露在一些共同风格风险上，而情绪冲击会造成同一风格的股票收益率共同运动，因此同一风格的股票存在相关性很高的错误定价</p>
+<p>后者认为由于认知偏差，投资者难以及时反映</p>
+<p>此文还指出，大多异象可以按照时间尺度分为短时间和长时间两类，前者大多来自投资者有限注意力，后者来自投资者过度自信</p>
+<p><strong>长时间尺度————FIN因子</strong></p>
+<p>使用上市公司的发行回购计算（通常认为管理层认为股价过高会增发股票，股价低估会回购股票），投资者对此反应不足使短期内股价不会修正；</p>
+<p>从美国实证表明，增发和未来收益呈负相关，回购和未来收益正相关，为此FIN因子如下步骤构建：</p>
+<ul>
+<li>
+<p>过去五年复合股权发行量CSI；</p>
+<p>根据20，80断点将股票分为三组得到CSI分组</p>
+</li>
+<li>
+<p>过去一年股票净发行量NSI；</p>
+<p>先分为净发行和净回购两大类，净回购（按数量）用中位数分为高低【两组】，净发行（按数量）用30，70断点分为【三组】，用净回购中的高组（回购最多的组合）作为NSI高组，净发行的高组（发行最多的组合）作为NSI的低组（剩下分到中组，即NSI一共高中低三组，是由净发行和净回购两类按特定方法拼凑）</p>
+</li>
+<li>
+<p>CSI，NSI分别和市值2x3双重排序，取二者平均得到FIN因子，FIN因子变化缓慢，仅能解释长时间的异象（通常3-5年）</p>
+</li>
+</ul>
+<p><strong>短时间尺度————PEAD因子</strong></p>
+<p>使用盈余惯性，业绩超预期公司的股票比业绩低于预期公司的股票在未来6到9个月能获得更高的收益（有限注意力）</p>
+<p>构建方法：</p>
+<ul>
+<li>以上市公司最近一个财报的披露日期为时间零点</li>
+<li>计算[-2,1]窗口内，股价相对于市场的累计超额收益率CAR（即和市场指数的收益率差之和，该值和未来收益率正相关）</li>
+<li>采用20，80断点CAR分三组，和市值2x3双重排序</li>
 </ul>
 
             </div>
@@ -574,7 +660,7 @@
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-er-bei-ta/" title="实证资产定价(二)贝塔">https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-er-bei-ta/</a>
+      <a href="https://dorianhung.github.io/post/4.1/" title="因子投资与实践--多因子模型">https://dorianhung.github.io/post/4.1/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -587,15 +673,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="实证资产定价（三）规模效应" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-san-gui-mo-xiao-ying/">实证资产定价（三）规模效应</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="实证资产定价（三）规模效应" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-san-gui-mo-xiao-ying/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="实证资产定价(一)预备知识" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-1-yu-bei-zhi-shi/">实证资产定价(一)预备知识</a>
-        <a class="nav-mobile-next" title="实证资产定价(一)预备知识" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-1-yu-bei-zhi-shi/">下一篇</a>
+        <a class="nav-pc-next" title="实证资产定价（五） 动量/反转效应" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-wu-dong-liang-fan-zhuan-xiao-ying/">实证资产定价（五） 动量/反转效应</a>
+        <a class="nav-mobile-next" title="实证资产定价（五） 动量/反转效应" href="https://dorianhung.github.io/post/shi-zheng-zi-chan-ding-jie-wu-dong-liang-fan-zhuan-xiao-ying/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
